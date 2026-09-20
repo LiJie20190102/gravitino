@@ -16,7 +16,7 @@ Apache Gravitino offers the capability to utilize [Apache Hive](https://hive.apa
 * Gravitino must have network access to the Hive metastore service using the Thrift protocol.
 
 :::note
-The Hive catalog supports HMS versions 2.x and 3.x. it can automatically detect the HMS version.
+The Hive catalog supports HMS versions 2.x. it can automatically detect the HMS version.
 :::
 
 ## Catalog
@@ -47,7 +47,7 @@ Besides the [common catalog properties](./gravitino-server-config.md#catalog-pro
 When `list-all-tables=false`, the Hive catalog removes the following on a best-effort basis:
 - Iceberg tables (table property `table_type=ICEBERG`)
 - Paimon tables (table property `table_type=PAIMON`)
-- Hudi tables (table property `provider=hudi`), together with their `_ro` and `_rt` siblings
+- Hudi tables (table property `provider=hudi`), together with their `_ro` siblings
 
 **Known limitation.** Filtering is performed server-side via the Hive Metastore, which only
 supports exact-key lookups on dot-free property keys. Hudi tables registered directly by Spark
