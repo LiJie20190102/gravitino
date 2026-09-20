@@ -1,124 +1,147 @@
 ---
-title: "Lance REST Integration"
-slug: "/lance-rest-integration"
+slug: /lance-rest-integration
 keywords:
-  - lance
-  - lance-rest
-  - spark
-  - ray
-  - integration
-license: "This software is licensed under the Apache License version 2."
+- lance
+- lance-rest
+- spark
+- ray
+- integration
+license: This software is licensed under the Apache License version 2.
 ---
+## 概述
 
-## Overview
+本指南提供全面的说明，介绍如何将 Apache Gravitino Lance REST 服务与支持 Lance 格式的数据处理引擎集成，包括通过 [Lance Spark 连接器](https://lance.org/integrations/spark/) 集成的 Apache Spark，以及通过 [Lance Ray 连接器](https://lance.org/integrations/ray/) 集成的 Ray。
 
-This guide provides comprehensive instructions for integrating the Apache Gravitino Lance REST service with data processing engines that support the Lance format, including Apache Spark via the [Lance Spark connector](https://lance.org/integrations/spark/) and Ray via the [Lance Ray connector](https://lance.org/integrations/ray/).
+本文档假定您已熟悉 [Lance REST 服务](../../lance-rest-service) 文档中所述的 Lance REST 服务设置。
 
-This documentation assumes familiarity with the Lance REST service setup as described in the [Lance REST Service](./lance-rest-service) documentation.
+## 兼容性矩阵
 
-## Compatibility Matrix
+下表列出了 Gravitino 版本与 Lance 连接器版本之间经过测试的兼容性：
 
-The following table outlines the tested compatibility between Gravitino versions and Lance connector versions:
-
-| Gravitino Version (Lance REST) | Supported lance-spark Versions | Supported lance-ray Versions                  |
+| Gravitino 版本（Lance REST） | 支持的 lance-spark 版本 | 支持的 lance-ray 版本                  |
 | ------------------------------ | ------------------------------ | --------------------------------------------- |
 | 1.1.1 - 1.2.1                  | 0.0.10 - 0.0.15                | 0.0.6 - 0.0.8                                 |
-| 1.3.0                          | 0.2.0, 0.4.0, 0.5.1            | 0.3.0 - 0.4.2 (0.2.0 conditionally supported) |
+| 1.3.0                          | 0.2.0, 0.4.0, 0.5.1            | 0.3.0 - 0.4.2（0.2.0 条件支持） |
 
 :::note
-- These version entries show which versions are expected to work together.
-- For Gravitino 1.3.0, the explicitly verified release versions are
-  `lance-spark` (0.2.0, 0.4.0, 0.5.1) and `lance-ray` (0.3.0, 0.4.2). `lance-ray`
-  0.2.0 is conditionally supported only with the conditions described below.
+- 这些版本条目显示了预期可以协同工作的版本。
+- 对于 Gravitino 1.3.0，明确验证过的发布版本是
+  `lance-spark`（0.2.0、0.4.0、0.5.1）和 `lance-ray`（0.3.0、0.4.2）。`lance-ray`
+  0.2.0 仅在满足下述条件时受到条件支持。
 
-- **`lance-spark` 0.1.0 and 0.1.1 are not supported on Gravitino 1.3.0.**
-  Those bundles create tables by calling the legacy
-  `POST /lance/v1/table/{id}/create-empty` endpoint, which 1.3.0 no longer
-  exposes — the table-declaration path was consolidated onto
-  `POST /lance/v1/table/{id}/declare` (`LanceTableOperations#declareTable`)
-  when the deprecated `createEmptyTable` API was removed during the
-  `lance-namespace-core` 0.7.5 upgrade. Running 0.1.x against 1.3.0 surfaces
-  as `404 Not Found` on every table-creation flow; the small set of
-  list/describe-only tests still works, but any write path will fail.
-- **`lance-ray` 0.1.0 is not supported on Gravitino 1.3.0.** It exposes
-  `write_lance(... namespace=<LanceNamespace>)`, whereas the 0.2.0+ test path
-  uses the new `write_lance(... namespace_impl="rest",
-  namespace_properties={...})` signature. Calling it on 0.1.0 raises
-  `TypeError: write_lance() got an unexpected keyword argument 'namespace_impl'`.
-- **`lance-ray` 0.2.0 is conditionally supported on Gravitino 1.3.0.** It
-  matches the new signature, but at runtime
-  `lance_ray.utils.create_storage_options_provider` does
-  `from lance import LanceNamespaceStorageOptionsProvider`, which no longer
-  exists in the `pylance` 6.0.0 wheel that `lance-namespace==0.7.5` pulls in,
-  raising `ImportError: cannot import name
-  'LanceNamespaceStorageOptionsProvider' from 'lance'`. You can use
-  `lance-ray` 0.2.0 with Gravitino 1.3.0 by pinning `pylance` to 3.x or 4.x.
-- Before using in production, test the exact connector versions in your own environment.
-- The Lance ecosystem is changing quickly, so some versions may introduce breaking changes.
+- **`lance-spark` 0.1.0 和 0.1.1 在 Gravitino 1.3.0 上不受支持。**
+  这些 bundle 通过调用旧版
+  `POST /lance/v1/table/{id}/create-empty` 端点来创建表，而 1.3.0 不再
+  暴露该端点——表声明路径已合并到
+  `POST /lance/v1/table/{id}/declare`（`LanceTableOperations#declareTable`）
+  当已弃用的 `createEmptyTable` API 在
+  `lance-namespace-core` 0.7.5 升级期间被移除时。在 1.3.0 上运行 0.1.x 会在每个表创建流程中
+  表现为 `404 Not Found`；少数
+  仅列表/描述测试仍可工作，但任何写入路径都会失败。
+- **`lance-ray` 0.1.0 在 Gravitino 1.3.0 上不受支持。** 它暴露
+  `write_lance(... namespace=<LanceNamespace>)`，而 0.2.0+ 测试路径
+  使用新的 `write_lance(... namespace_impl="rest",
+  namespace_properties={...})` 签名。在 0.1.0 上调用它会引发
+  `TypeError: write_lance() got an unexpected keyword argument 'namespace_impl'`。
+- **`lance-ray` 0.2.0 在 Gravitino 1.3.0 上受到条件支持。** 它
+  匹配新签名，但在运行时
+  `lance_ray.utils.create_storage_options_provider` 会执行
+  `from lance import LanceNamespaceStorageOptionsProvider`，而该名称不再
+  存在于 `lance-namespace==0.7.5` 拉取的 `pylance` 6.0.0 wheel 中，
+  从而引发 `ImportError: cannot import name
+  'LanceNamespaceStorageOptionsProvider' from 'lance'`。您可以使用
+  将 `pylance` 固定到 3.x 或 4.x，以在 Gravitino 1.3.0 上使用 `lance-ray` 0.2.0。
+- 在生产环境使用之前，请先在您自己的环境中测试确切的连接器版本。
+- Lance 生态系统变化很快，因此某些版本可能会引入破坏性变更。
 :::
 
-### Reproducing the matrix locally
+## 格式边界
 
-Both connectors ship with a multi-version integration test driver so the
-matrix can be re-verified (and extended) without ad-hoc scripting:
+Lance REST 服务是一个 Lance 表命名空间，即使其元数据后端是
+与格式无关的 Generic Catalog。因此，REST 表操作会在返回 Lance 元数据或应用表变更之前，
+验证存储的 `format` 属性。
+
+当某个标识符被已知的非 Lance 表占用时，直接的 Lance 表操作会失败，
+并返回 HTTP `400` 和 `INVALID_INPUT` 错误。`TableExists` 将该条目视为不存在，并
+返回正常的表未找到响应。底层 Generic Catalog 元数据和存储
+位置保持不变。
+
+同样的边界也适用于针对现有实体、通过 Lance
+委托器执行的创建请求：
+
+| 请求模式         | 现有非 Lance 实体                            |
+| -------------------- | ---------------------------------------------------- |
+| `CREATE`             | `409` 冲突，与任何现有表名一样       |
+| `EXIST_OK`           | `400 INVALID_INPUT`                                  |
+| `OVERWRITE`          | `400 INVALID_INPUT`；元数据和数据会保留 |
+| 注册 `OVERWRITE` | `400 INVALID_INPUT`；元数据和数据会保留 |
+
+验证在正常授权检查之后执行。它不会转换现有的
+Generic Catalog 未知格式加载错误，也不会改变 Generic Catalog 与格式无关的
+`ListTables` 行为。
+
+### 在本地复现该矩阵
+
+两个连接器都附带多版本集成测试驱动程序，因此
+无需临时编写脚本即可重新验证（并扩展）该矩阵：
 
 ```bash
-# lance-spark — runs LanceSparkRESTServiceIT once per bundle version.
-# The default list intentionally omits 0.1.0 / 0.1.1: those bundles call the
-# removed /create-empty endpoint and will fail with 404 against 1.3.0+.
+# lance-spark — 针对每个 bundle 版本运行一次 LanceSparkRESTServiceIT。
+# 默认列表有意省略了 0.1.0 / 0.1.1：这些 bundle 会调用
+# 已移除的 /create-empty 端点，并且针对 1.3.0+ 会以 404 失败。
 ./gradlew :lance:lance-rest-server:lanceSparkMatrixTest \
     -PlanceSparkBundleVersions=0.2.0,0.4.0,0.5.1 \
     -PskipDockerTests=true
-# Per-version JUnit reports land under
-# lance/lance-rest-server/build/reports/lance-spark-matrix/<version>/.
+# 每个版本的 JUnit 报告存放在
+# lance/lance-rest-server/build/reports/lance-spark-matrix/<version>/。
 
-# lance-ray — provisions a venv per version under
-# clients/client-python/build/lance-ray-matrix/.venv-<version>/ and runs
-# tests/integration/test_lance_ray.py against each. The Gradle wrapper
-# below starts / stops Gravitino automatically.
+# lance-ray — 为每个版本在以下位置准备一个 venv：
+# clients/client-python/build/lance-ray-matrix/.venv-<version>/，并运行
+# tests/integration/test_lance_ray.py 对每个版本运行。Gradle wrapper
+# 下方的会自动启动/停止 Gravitino。
 ./gradlew :clients:client-python:lanceRayMatrixTest \
     -PlanceRayVersions=0.4.2,0.3.0
 ```
 
-### Rationale
+### 原因
 
-The Lance ecosystem is under active development, with frequent updates to APIs and features. Gravitino's Lance REST service depends on specific connector behaviors to ensure reliable operation. Using incompatible versions may result in:
+Lance 生态系统正在积极开发中，API 和功能频繁更新。Gravitino 的 Lance REST 服务依赖特定的连接器行为来确保可靠运行。使用不兼容的版本可能会导致：
 
-- Runtime errors or exceptions
-- Data corruption or loss
-- Unexpected behavior in query execution
-- Performance degradation
+- 运行时错误或异常
+- 数据损坏或丢失
+- 查询执行中的意外行为
+- 性能下降
 
-## Prerequisites
+## 先决条件
 
-Before proceeding, ensure the following requirements are met:
+在继续之前，请确保满足以下要求：
 
-1. **Gravitino Server**: A running Gravitino server instance with the Lance REST service enabled
-    - Default endpoint: `http://localhost:9101/lance`
+1. **Gravitino Server**：一个正在运行且已启用 Lance REST 服务的 Gravitino 服务器实例
+    - 默认端点：`http://localhost:9101/lance`
 
-2. **Lance Catalog**: A Lance catalog created in Gravitino using either:
-    - Lance REST namespace API (`CreateNamespace` operation - see [Lance REST Service documentation](./lance-rest-service.md)
-    - Gravitino REST API, for more, refer to [lakehouse-generic-catalog](./lakehouse-generic-catalog.md)
-    - Example catalog name: `lance_catalog`
+2. **Lance Catalog**：使用以下任一方式在 Gravitino 中创建的 Lance catalog：
+    - Lance REST namespace API（`CreateNamespace` 操作 - 请参阅 [Lance REST 服务文档](./lance-rest-service.md)
+    - Gravitino REST API，更多信息请参阅 [lakehouse-generic-catalog](./lakehouse-generic-catalog.md)
+    - Catalog 名称示例：`lance_catalog`
 
-3. **Lance Spark Bundle** (for Spark integration):
-    - Downloaded `lance-spark` bundle JAR matching your Apache Spark version
-    - Note the absolute file path for configuration
+3. **Lance Spark Bundle**（用于 Spark 集成）：
+    - 下载与您的 Apache Spark 版本匹配的 `lance-spark` bundle JAR
+    - 记录用于配置的绝对文件路径
 
-4. **Python Dependencies**:
-    - For Spark integration: `pyspark`
-    - For Ray integration: `ray`, `lance-namespace`, `lance-ray`
+4. **Python 依赖项**：
+    - 用于 Spark 集成：`pyspark`
+    - 用于 Ray 集成：`ray`、`lance-namespace`、`lance-ray`
 
-## Authentication and authorization
+## 认证与授权
 
-For per-user metadata authorization, connect engines to the auxiliary Lance REST service with
-`gravitino.authorization.enable=true`. Configure each engine's REST client to send the caller's
-`Authorization` header on every namespace and table request. If supported by that client version,
-`X-Gravitino-Active-Roles` can restrict the active roles. See the
-[Lance REST authentication and privilege matrix](./lance-rest-service.md#authentication-and-authorization).
+要进行按用户进行的元数据授权，请将引擎连接到辅助 Lance REST 服务，并设置
+`gravitino.authorization.enable=true`。配置每个引擎的 REST 客户端，使其在每个命名空间和表请求上
+发送调用方的 `Authorization` 头。如果该客户端版本支持，
+`X-Gravitino-Active-Roles` 可以限制活动角色。请参阅
+[Lance REST 认证与权限矩阵](./lance-rest-service.md#authentication-and-authorization)。
 
-For example, with development-only `simple` authentication, this request lists only tables that
-`user1` may access (the password is not validated):
+例如，在使用仅用于开发的 `simple` 认证时，此请求仅列出
+`user1` 可以访问的表（不会验证密码）：
 
 ```shell
 curl --user 'user1:unused' \
@@ -126,27 +149,27 @@ curl --user 'user1:unused' \
   'http://localhost:9101/lance/v1/namespace/lance_catalog.sales/table/list?delimiter=.'
 ```
 
-Connector header configuration depends on the connector version. The Spark and Ray examples
-below omit credentials and assume the default simple-authentication setup; in auxiliary mode
-such requests use the configured Lance service identity. They do not demonstrate per-user
-access control. In standalone mode, all metadata requests to Gravitino use the backend service
-identity even when an engine supplies its own incoming credentials.
+连接器头配置取决于连接器版本。以下 Spark 和 Ray 示例
+省略了凭据，并假定使用默认的 simple 认证设置；在辅助模式下，
+此类请求使用配置的 Lance 服务身份。它们并不演示按用户
+访问控制。在独立模式下，即使引擎提供自己的传入凭据，所有发往 Gravitino 的元数据请求都使用后端服务
+身份。
 
-Engines that probe before creating need the corresponding creation privileges. Reading table
-metadata requires `SELECT_TABLE` or `MODIFY_TABLE` with parent access, while overwriting requires
-`MODIFY_TABLE` and dropping requires ownership. Metadata authorization does not authorize direct
-reads or writes to object storage: configure storage access independently. Lance REST responses
-can return shared storage credentials configured on the catalog or table; it does not issue
-per-user, scoped storage credentials.
+在创建之前进行探测的引擎需要相应的创建权限。读取表
+元数据需要具有父级访问权限的 `SELECT_TABLE` 或 `MODIFY_TABLE`，而覆盖需要
+`MODIFY_TABLE`，删除需要所有权。元数据授权并不授权直接
+读取或写入对象存储：请独立配置存储访问。Lance REST 响应
+可以返回在 catalog 或表上配置的共享存储凭据；它不会颁发
+按用户限定范围的存储凭据。
 
-### Verify authentication and authorization locally
+### 在本地验证认证与授权
 
-The HTTP integration suites start Gravitino with the Lance auxiliary service and exercise
-caller identity, service identity fallback, active roles, namespace and table privileges,
-filtered listings, denied mutations, and rejection of non-empty Arrow creates without side effects.
-They also start standalone Lance REST through its production entry point in a separate JVM to verify
-its outbound service identity and propagation of backend authorization denials through the Gravitino
-HTTP API.
+HTTP 集成测试套件会启动带有 Lance 辅助服务的 Gravitino，并检验
+调用方身份、服务身份回退、活动角色、命名空间和表权限、
+过滤后的列表、被拒绝的变更，以及拒绝非空 Arrow 创建且不产生副作用。
+它们还会在单独的 JVM 中通过生产入口点启动独立 Lance REST，以验证
+其出站服务身份，以及后端授权拒绝通过 Gravitino
+HTTP API 的传播。
 
 ```shell
 ./gradlew :lance:lance-rest-server:test \
@@ -156,26 +179,26 @@ HTTP API.
   -PskipDockerTests=true
 ```
 
-These suites use `simple` authentication and local storage. They do not validate an external
-OAuth2/Kerberos provider or object-store access policies.
+这些测试套件使用 `simple` 认证和本地存储。它们不会验证外部
+OAuth2/Kerberos 提供程序或对象存储访问策略。
 
-## Spark Integration
+## Spark 集成
 
-### Configuration
+### 配置
 
-The following example demonstrates how to configure a PySpark session to interact with Lance REST and perform table operations using Spark SQL.
+以下示例演示如何配置 PySpark 会话以与 Lance REST 交互，并使用 Spark SQL 执行表操作。
 
 ```python
 from pyspark.sql import SparkSession
 import os
 import logging
 
-# Configure logging for debugging
+# 配置日志记录以进行调试
 logging.basicConfig(level=logging.INFO)
 
-# Configure Spark to use the lance-spark bundle
-# Replace /path/to/lance-spark-bundle-3.5_2.12-X.X.XX.jar with your actual JAR path and version;
-# refer to the compatibility matrix for supported lance-spark versions.
+# 配置 Spark 以使用 lance-spark 捆绑包
+# 将 /path/to/lance-spark-bundle-3.5_2.12-X.X.XX.jar 替换为您实际的 JAR 路径和版本；
+# 请参阅兼容性矩阵以了解支持的 lance-spark 版本。
 os.environ["PYSPARK_SUBMIT_ARGS"] = (
     "--jars /path/to/lance-spark-bundle-3.5_2.12-0.4.0.jar "
     "--conf \"spark.driver.extraJavaOptions=--add-opens=java.base/sun.nio.ch=ALL-UNNAMED\" "
@@ -183,9 +206,9 @@ os.environ["PYSPARK_SUBMIT_ARGS"] = (
     "--master local[1] pyspark-shell"
 )
 
-# Initialize Spark session with Lance REST catalog configuration
-# Note: The catalog "lance_catalog" must exist in Gravitino before running this code, you can create
-# it via Lance REST API `CreateNamespace` or Gravitino REST API `CreateCatalog`.
+# 使用 Lance REST 目录配置初始化 Spark 会话
+# 注意：在运行此代码之前，目录 "lance_catalog" 必须存在于 Gravitino 中，您可以创建
+# 它，通过 Lance REST API `CreateNamespace` 或 Gravitino REST API `CreateCatalog`。
 spark = SparkSession.builder \
     .appName("lance_rest_integration") \
     .config("spark.sql.catalog.lance", "org.lance.spark.LanceNamespaceSparkCatalog") \
@@ -195,13 +218,13 @@ spark = SparkSession.builder \
     .config("spark.sql.defaultCatalog", "lance") \
     .getOrCreate()
 
-# Enable debug logging for troubleshooting
+# 启用调试日志记录以进行故障排除
 spark.sparkContext.setLogLevel("DEBUG")
 
-# Create schema (database)
+# 创建 schema（数据库）
 spark.sql("CREATE DATABASE IF NOT EXISTS sales")
 
-# Create Lance table with explicit location
+# 创建具有显式位置的 Lance 表
 spark.sql("""
     CREATE TABLE sales.orders (
         id INT,
@@ -212,21 +235,21 @@ spark.sql("""
     TBLPROPERTIES ('format' = 'lance')
 """)
 
-# Insert sample data
+# 插入示例数据
 spark.sql("INSERT INTO sales.orders VALUES (1, 1.1)")
 
-# Query data
+# 查询数据
 spark.sql("SELECT * FROM sales.orders").show()
 ```
 
-### Storage Location Configuration
+### 存储位置配置
 
-The `LOCATION` clause in the `CREATE TABLE` statement is optional. When omitted, lance-spark automatically determines an appropriate storage location based on catalog properties.
-For detailed information on location resolution logic, refer to the [Lakehouse Generic Catalog documentation](./lakehouse-generic-catalog.md#key-property-location).
+`CREATE TABLE` 语句中的 `LOCATION` 子句是可选的。省略时，lance-spark 会根据 catalog 属性自动确定合适的存储位置。
+有关位置解析逻辑的详细信息，请参阅 [Lakehouse Generic Catalog 文档](./lakehouse-generic-catalog.md#key-property-location)。
 
-For Gravitino-managed Lance catalogs, put the storage configuration in the Gravitino catalog properties so Spark does not need to repeat it.
+对于由 Gravitino 管理的 Lance catalog，请将存储配置放入 Gravitino catalog 属性中，这样 Spark 无需重复配置。
 
-For example, create the Gravitino catalog with catalog-level Lance storage properties:
+例如，使用 catalog 级别的 Lance 存储属性创建 Gravitino catalog：
 
 ```shell
 curl -X POST -H "Accept: application/vnd.gravitino.v1+json" \
@@ -259,91 +282,91 @@ spark.sql("""
 """)
 ```
 
-If you need a per-table override, `lance.storage.*` table properties are still supported and take precedence over catalog defaults.
+如果您需要按表覆盖，仍然支持 `lance.storage.*` 表属性，并且其优先级高于 catalog 默认值。
 
-## Ray Integration
+## Ray 集成
 
-### Installation
+### 安装
 
-Install the required Ray integration packages:
+安装所需的 Ray 集成包：
 
 ```shell
 pip install lance-ray
 ```
 
 :::info
-- Ray will be automatically installed if not already present
-- For Gravitino 1.3.0, use a `lance-namespace` client compatible with
-  server-side `lance-namespace-core` 0.7.5 or newer.
-- Ensure Ray version compatibility in your environment before deployment
+- 如果尚未安装，Ray 会自动安装
+- 对于 Gravitino 1.3.0，请使用与
+  服务端 `lance-namespace-core` 0.7.5 或更新版本兼容的 `lance-namespace` 客户端。
+- 在部署前，确保您的环境中的 Ray 版本兼容性
 :::
 
-### Example
+### 示例
 
-The following example demonstrates reading and writing Lance datasets through the Lance REST namespace using Ray:
+以下示例演示如何使用 Ray 通过 Lance REST namespace 读取和写入 Lance 数据集：
 
 ```python
 import ray
 import lance_namespace as ln
 from lance_ray import read_lance, write_lance
 
-# Initialize Ray runtime
+# 初始化 Ray 运行时
 ray.init()
 
-# Connect to Lance REST namespace
+# 连接到 Lance REST 命名空间
 namespace = ln.connect("rest", {"uri":  "http://localhost:9101/lance"})
 
-# Create sample dataset
+# 创建示例数据集
 data = ray.data.range(1000).map(
     lambda row: {"id": row["id"], "value": row["id"] * 2}
 )
 
-# Write dataset to Lance table
-# Note: Both the catalog "lance_catalog" and schema "sales" must exist in Gravitino, you can create
-# them via Lance REST API `CreateNamespace` or Gravitino REST API `CreateCatalog` and `CreateSchema`.
+# 将数据集写入 Lance 表
+# 注意：目录 "lance_catalog" 和模式 "sales" 都必须存在于 Gravitino 中，你可以创建
+# 它们可以通过 Lance REST API `CreateNamespace` 或 Gravitino REST API `CreateCatalog` 和 `CreateSchema` 来创建。
 write_lance(
     data, 
     namespace=namespace, 
     table_id=["lance_catalog", "sales", "orders"]
 )
 
-# Read dataset from Lance table
+# 从 Lance 表读取数据集
 ray_dataset = read_lance(
     namespace=namespace, 
     table_id=["lance_catalog", "sales", "orders"]
 )
 
-# Perform filtering operation
+# 执行过滤操作
 result = ray_dataset.filter(lambda row: row["value"] < 100).count()
 print(f"Filtered row count: {result}")
 ```
 
-## Additional Engines
+## 其他引擎
 
-The Lance REST service is compatible with other data processing engines that support the Lance format, including:
+Lance REST 服务与支持 Lance 格式的其他数据处理引擎兼容，包括：
 
-- **DuckDB**: For analytical SQL queries
-- **Pandas**: For Python-based data manipulation
-- **DataFusion**: For Rust-based query execution
+- **DuckDB**：用于分析型 SQL 查询
+- **Pandas**：用于基于 Python 的数据操作
+- **DataFusion**：用于基于 Rust 的查询执行
 
-Note: These three engines do not support Lance REST natively yet, but can still interact with Lance datasets through table location paths retrieved from the Lance REST service.
+注意：这三个引擎目前尚不原生支持 Lance REST，但仍可通过从 Lance REST 服务获取的表位置路径与 Lance 数据集交互。
 
-For engine-specific integration instructions, consult the [Lance Integration Documentation](https://lance.org/integrations).
+有关特定引擎的集成说明，请参阅 [Lance 集成文档](https://lance.org/integrations)。
 
-### General Integration Pattern
+### 通用集成模式
 
-Most Lance-compatible engines follow this general pattern:
+大多数兼容 Lance 的引擎都遵循以下通用模式：
 
-1. Establish connection to Lance REST service endpoint
-2. Authenticate using appropriate credentials
-3. Reference tables using the hierarchical namespace structure
-4. Execute read/write operations using engine-native APIs
+1. 建立到 Lance REST 服务端点的连接
+2. 使用适当的凭据进行认证
+3. 使用分层命名空间结构引用表
+4. 使用引擎原生 API 执行读/写操作
 
-Refer to each engine's specific documentation for detailed configuration parameters and code examples.
+有关详细配置参数和代码示例，请参阅各引擎的特定文档。
 
-## Related
+## 相关
 
-- [Lance REST Service Documentation](./lance-rest-service)
-- [Lance Format Specification](https://lance.org/)
-- [Apache Gravitino Documentation](https://gravitino.apache.org/)
-- [Lakehouse Generic Catalog Guide](./lakehouse-generic-catalog.md)
+- [Lance REST 服务文档](../../lance-rest-service)
+- [Lance 格式规范](https://lance.org/)
+- [Apache Gravitino 文档](https://gravitino.apache.org/)
+- [Lakehouse Generic Catalog 指南](./lakehouse-generic-catalog.md)
