@@ -16,7 +16,7 @@ data between clusters or storage systems changes the fileset rather than every j
 
 That indirection is delivered by the Gravitino Virtual File System, or GVFS. GVFS is a filesystem
 implementation that resolves a fileset name to its storage location and then reads and writes
-through to the underlying system, whether that is HDFS, S3, GCS, ADLS, or OSS. Paths take the form
+through to the underlying system, whether that is HDFS, S3. Paths take the form
 `gvfs://fileset/{catalog_name}/{schema_name}/{fileset_name}`, so a Spark job, a pandas script, or a
 Hadoop shell command reads a catalog name rather than a bucket URL.
 

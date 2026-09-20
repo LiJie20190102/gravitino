@@ -35,7 +35,7 @@ name: Docs zh-CN Translation
 on:
   push:
     branches:
-      - main
+      - translate_test  # 测试用，测完后改回 main
     paths:
       - 'docs/**'
       - '.github/workflows/docs-translate-zh-cn.yml'
