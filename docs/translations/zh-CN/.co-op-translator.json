@@ -1,7 +1,7 @@
 {
   "apache-hive-catalog.md": {
-    "original_hash": "a1b23e8680c0596bfd4996d79a3e4382",
-    "translation_date": "2026-09-20T06:51:43+00:00",
+    "original_hash": "90f1b67a408cb5da88afccfd0cd7dfbd",
+    "translation_date": "2026-09-20T12:45:17+00:00",
     "source_file": "apache-hive-catalog.md",
     "language_code": "zh-CN"
   },
@@ -21,6 +21,12 @@
     "original_hash": "41ad1acccee16ad7a058772db454b997",
     "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "chart.md",
+    "language_code": "zh-CN"
+  },
+  "cli.md": {
+    "original_hash": "1211da2a77602e82bae6191186ee2cb4",
+    "translation_date": "2026-09-20T06:51:43+00:00",
+    "source_file": "cli.md",
     "language_code": "zh-CN"
   },
   "daft-connector/daft-connector.md": {
@@ -181,7 +187,7 @@
   },
   "gravitino-server-config.md": {
     "original_hash": "b1e6fedd06a23247f12a90e00a13510b",
-    "translation_date": "2026-09-20T06:51:43+00:00",
+    "translation_date": "2026-09-20T12:42:17+00:00",
     "source_file": "gravitino-server-config.md",
     "language_code": "zh-CN"
   },
@@ -205,7 +211,7 @@
   },
   "how-to-install.md": {
     "original_hash": "8ab260e1da5942d6b1018a72852525ef",
-    "translation_date": "2026-09-20T06:51:43+00:00",
+    "translation_date": "2026-09-20T12:43:17+00:00",
     "source_file": "how-to-install.md",
     "language_code": "zh-CN"
   },
@@ -255,6 +261,18 @@
     "original_hash": "cc931ff612439e65bdf0b48d72034576",
     "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "how-to-use-the-playground.md",
+    "language_code": "zh-CN"
+  },
+  "i18n/README.md": {
+    "original_hash": "bfe3f503b43ca4dd524c2f54bb759709",
+    "translation_date": "2026-09-20T12:50:02+00:00",
+    "source_file": "i18n/README.md",
+    "language_code": "zh-CN"
+  },
+  "i18n/zh-CN-prompt.md": {
+    "original_hash": "514365aa47aa628d4841a0323f502a0b",
+    "translation_date": "2026-09-20T12:49:29+00:00",
+    "source_file": "i18n/zh-CN-prompt.md",
     "language_code": "zh-CN"
   },
   "iceberg-compaction-policy.md": {
@@ -391,7 +409,7 @@
   },
   "lakehouse-generic-lance-table.md": {
     "original_hash": "5c1c6d80c7f05f0db18ed93b185507d4",
-    "translation_date": "2026-09-20T06:51:43+00:00",
+    "translation_date": "2026-09-20T12:48:00+00:00",
     "source_file": "lakehouse-generic-lance-table.md",
     "language_code": "zh-CN"
   },
@@ -415,7 +433,7 @@
   },
   "lance-rest-integration.md": {
     "original_hash": "bdd626b2f8c0395525c969f23ffa56db",
-    "translation_date": "2026-09-20T06:51:43+00:00",
+    "translation_date": "2026-09-20T12:46:25+00:00",
     "source_file": "lance-rest-integration.md",
     "language_code": "zh-CN"
   },
@@ -665,6 +683,12 @@
     "source_file": "spark-connector/spark-integration-test.md",
     "language_code": "zh-CN"
   },
+  "spark-connector/spark-rest-catalog-discovery.md": {
+    "original_hash": "e60033b5df028e1994a95eb19cd811b3",
+    "translation_date": "2026-09-20T12:50:19+00:00",
+    "source_file": "spark-connector/spark-rest-catalog-discovery.md",
+    "language_code": "zh-CN"
+  },
   "statistics.md": {
     "original_hash": "28c5dcc6651cab249d7134a038fa4aec",
     "translation_date": "2026-09-20T06:51:43+00:00",
@@ -695,6 +719,12 @@
     "source_file": "table-maintenance-service/optimizer-troubleshooting.md",
     "language_code": "zh-CN"
   },
+  "table-maintenance-service/optimizer.md": {
+    "original_hash": "4dfddb82f656c27ef0b8d977d37c4869",
+    "translation_date": "2026-09-20T06:51:43+00:00",
+    "source_file": "table-maintenance-service/optimizer.md",
+    "language_code": "zh-CN"
+  },
   "table-partitioning-distribution-sort-order-indexes.md": {
     "original_hash": "29308e5d47dbfbb5ef17c55d741c4f47",
     "translation_date": "2026-09-20T06:51:43+00:00",
@@ -717,30 +747,6 @@
     "original_hash": "d2ab3ed8f09e7a797a121f89f3c3f734",
     "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "topics.md",
-    "language_code": "zh-CN"
-  },
-  "webui-v2.md": {
-    "original_hash": "fba9aa2f0e38b764bc3a6d2c89fd1a97",
-    "translation_date": "2026-09-20T06:51:43+00:00",
-    "source_file": "webui-v2.md",
-    "language_code": "zh-CN"
-  },
-  "webui.md": {
-    "original_hash": "40500d027cccbc6167a29f3db8573d6b",
-    "translation_date": "2026-09-20T06:51:43+00:00",
-    "source_file": "webui.md",
-    "language_code": "zh-CN"
-  },
-  "cli.md": {
-    "original_hash": "1211da2a77602e82bae6191186ee2cb4",
-    "translation_date": "2026-09-20T06:51:43+00:00",
-    "source_file": "cli.md",
-    "language_code": "zh-CN"
-  },
-  "table-maintenance-service/optimizer.md": {
-    "original_hash": "4dfddb82f656c27ef0b8d977d37c4869",
-    "translation_date": "2026-09-20T06:51:43+00:00",
-    "source_file": "table-maintenance-service/optimizer.md",
     "language_code": "zh-CN"
   },
   "trino-connector/authentication.md": {
@@ -817,7 +823,7 @@
   },
   "trino-connector/supported-catalog.md": {
     "original_hash": "5be85b306cd030659ebc006f90a02167",
-    "translation_date": "2026-09-20T06:51:43+00:00",
+    "translation_date": "2026-09-20T12:48:57+00:00",
     "source_file": "trino-connector/supported-catalog.md",
     "language_code": "zh-CN"
   },
@@ -837,6 +843,18 @@
     "original_hash": "af575dd4a8b062c10b384c51994a1bef",
     "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "trino-connector/udf-support.md",
+    "language_code": "zh-CN"
+  },
+  "webui-v2.md": {
+    "original_hash": "fba9aa2f0e38b764bc3a6d2c89fd1a97",
+    "translation_date": "2026-09-20T06:51:43+00:00",
+    "source_file": "webui-v2.md",
+    "language_code": "zh-CN"
+  },
+  "webui.md": {
+    "original_hash": "40500d027cccbc6167a29f3db8573d6b",
+    "translation_date": "2026-09-20T06:51:43+00:00",
+    "source_file": "webui.md",
     "language_code": "zh-CN"
   }
 }
