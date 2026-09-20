@@ -1,0 +1,106 @@
+# Licensed to the Apache Software Foundation (ASF) under one
+# or more contributor license agreements.  See the NOTICE file
+# distributed with this work for additional information
+# regarding copyright ownership.  The ASF licenses this file
+# to you under the Apache License, Version 2.0 (the
+# "License"); you may not use this file except in compliance
+# with the License.  You may obtain a copy of the License at
+#
+#  http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing,
+# software distributed under the License is distributed on an
+# "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+# KIND, either express or implied.  See the License for the
+# specific language governing permissions and limitations
+# under the License.
+
+name: Docs zh-CN Translation
+
+# Auto-translate docs/ markdown files to Chinese (zh-CN) when English docs change.
+# Uses co-op-translator with Gravitino-specific glossary and prompt customization.
+# Only translates changed/added files incrementally. Opens a PR for review.
+#
+# Required secrets (Settings → Secrets and variables → Actions):
+#   OPENAI_API_KEY        — API key for your LLM provider
+#   OPENAI_CHAT_MODEL_ID  — Model name (e.g. gpt-4o, zhanlu/glm-5.2)
+#   OPENAI_BASE_URL       — (Optional) Custom API endpoint for OpenAI-compatible providers
+#
+# Required settings (Settings → Actions → General):
+#   - Workflow permissions → Read and write permissions
+#   - Allow GitHub Actions to create and approve pull requests
+#
+# See docs/i18n/README.md for full setup guide.
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'docs/**'
+      - '.github/workflows/docs-translate-zh-cn.yml'
+      - 'scripts/run_translate.py'
+      - 'docs/i18n/**'
+  workflow_dispatch: # Allow manual trigger
+
+concurrency:
+  group: docs-translate-zh-cn
+  cancel-in-progress: false
+
+jobs:
+  translate:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+      pull-requests: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install co-op-translator
+
+      - name: Run translation
+        env:
+          PYTHONIOENCODING: utf-8
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_CHAT_MODEL_ID: ${{ secrets.OPENAI_CHAT_MODEL_ID }}
+          OPENAI_BASE_URL: ${{ secrets.OPENAI_BASE_URL }}
+        run: |
+          python scripts/run_translate.py
+
+      - name: Create Pull Request with translations
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: "🌐 Update zh-CN translations"
+          title: "🌐 Auto-update Chinese (zh-CN) translations"
+          body: |
+            ## 🌐 Chinese Translation Update
+
+            This PR updates the Chinese (zh-CN) translations for recent changes to `docs/`.
+
+            ### 📋 Changes
+            - Translated/updated Markdown files are in `docs/translations/zh-CN/`
+            - Only changed files are translated (incremental sync via file hash tracking)
+            - Translation uses Gravitino-specific glossary and style rules (see `docs/i18n/`)
+
+            ---
+            Review the wording and file changes, then merge when ready.
+          branch: update-zh-cn-translations
+          base: main
+          labels: translation, automated-pr
+          delete-branch: true
+          add-paths: |
+            docs/translations/

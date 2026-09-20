@@ -1,0 +1,67 @@
+Metalake
+metalake
+Catalog
+catalog
+Schema
+schema
+Fileset
+fileset
+Topic
+topic
+Model
+model
+Gravitino
+Apache Gravitino
+GVFS
+gvfs
+Iceberg
+Apache Iceberg
+Trino
+Paimon
+Apache Paimon
+Hudi
+Apache Hudi
+Daft
+Lance
+Hive
+Apache Hive
+Kafka
+Apache Kafka
+Spark
+Apache Spark
+Flink
+Apache Flink
+HDFS
+S3
+GCS
+ADLS
+OSS
+MySQL
+PostgreSQL
+ClickHouse
+Doris
+StarRocks
+Hologres
+OceanBase
+Glue
+AWS Glue
+REST API
+JDBC
+Thrift
+IRC
+UDF
+RPC
+SQL
+API
+JSON
+YAML
+MDX
+SSOT
+Single Source of Truth
+Delta
+Delta Lake
+Parquet
+ORC
+Avro
+protobuf
+Protobuf

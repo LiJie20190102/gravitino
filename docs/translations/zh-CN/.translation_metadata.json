@@ -1,0 +1,562 @@
+{
+  "apache-hive-catalog.md": {
+    "source_hash": "b6201b53de66a77702ab4b2026cc9366c45fb78969a3532ab2e370f01e844649",
+    "translated_at": "2026-09-17T23:06:17"
+  },
+  "aws-glue-catalog.md": {
+    "source_hash": "f34da91710bb26ad6968521239b5c684737e9b39883b0d2d63e584aceadc0d9d",
+    "translated_at": "2026-09-17T23:19:16"
+  },
+  "catalogs-and-schemas.md": {
+    "source_hash": "32b0990a0fd3e931208a6b8686967137426b698e46494e457d99143b3d06dc2b",
+    "translated_at": "2026-09-17T23:32:17"
+  },
+  "chart.md": {
+    "source_hash": "7d97d44e17d75ba39eac718afd9b56fdda8c75097fcace4a6a434401bc70523f",
+    "translated_at": "2026-09-17T23:38:52"
+  },
+  "cli.md": {
+    "source_hash": "6b4a9ed1f6cf1a7419285ec0eb3567e7ecbf7d76bb22f4c9d4aa59a5831e445a",
+    "translated_at": "2026-09-18T00:06:04"
+  },
+  "daft-connector\\daft-connector.md": {
+    "source_hash": "611c76e98876d78a2ad8cf9c00430a268b17cdb3e245676583820570cd2b8a60",
+    "translated_at": "2026-09-18T00:10:27"
+  },
+  "development\\custom-job-executor.md": {
+    "source_hash": "abb552e6f82efd05541c84895542c53aa398f1c2419b6a150ff8f85cd38d2e35",
+    "translated_at": "2026-09-18T00:13:23"
+  },
+  "development\\custom-partition-storage.md": {
+    "source_hash": "1061784e4ec075d89cf4f6f53c23c9fd25679a740ec66c93908c2458043ec1a2",
+    "translated_at": "2026-09-18T00:14:08"
+  },
+  "docker-image-details.md": {
+    "source_hash": "ad7983c8d90ae973a2ed6f9cd325c7c2db4239095a2ed6e5326d74c85507c7bc",
+    "translated_at": "2026-09-18T01:14:25"
+  },
+  "expression.md": {
+    "source_hash": "7505cd2f0b7ed3d6e8845fcefb91bdedc19d7f85d67507265fa7aeed51ec118c",
+    "translated_at": "2026-09-18T01:38:00"
+  },
+  "fileset-catalog-index.md": {
+    "source_hash": "b8d82d0c5478b1f6d14f9f480eaa978820c20c9eefa496c9142383710c51bd6b",
+    "translated_at": "2026-09-18T01:45:31"
+  },
+  "fileset-catalog-with-adls.md": {
+    "source_hash": "5a033319f3b74ed9913777ad7935d02e962d85b10f98c1b1e8f4a02fac33c0bc",
+    "translated_at": "2026-09-18T02:55:13"
+  },
+  "fileset-catalog-with-cos.md": {
+    "source_hash": "a12feffcc031a0e1a95613e8e05084e6a3ffa011fd2690d5c33b7584a5d44a8d",
+    "translated_at": "2026-09-18T04:07:04"
+  },
+  "fileset-catalog-with-gcs.md": {
+    "source_hash": "a44b171a7c530d7513ab0b2c03ac2730350e9784bffaea4bc435c9a2463d6318",
+    "translated_at": "2026-09-18T05:13:32"
+  },
+  "fileset-catalog-with-oss.md": {
+    "source_hash": "f71d2aeb63f7f4ba874c1f25ca197186ab626f8e259061d47690060640730098",
+    "translated_at": "2026-09-18T06:22:09"
+  },
+  "fileset-catalog-with-s3.md": {
+    "source_hash": "c74ce7537f8885bda1ed5c01b5bb90e5b74a262d025879325b209977e0e7ac52",
+    "translated_at": "2026-09-18T07:31:49"
+  },
+  "fileset-catalog.md": {
+    "source_hash": "e51859df4b0b092de4cfe314a9c8b8f215f536180e119cb1b30dc8345fae5230",
+    "translated_at": "2026-09-18T08:36:10"
+  },
+  "filesets.md": {
+    "source_hash": "7b7cacdd9dd04d26f52b0c67987e8b0a4d32a896505d39b0ae4dd1cc148c1d89",
+    "translated_at": "2026-09-18T08:54:51"
+  },
+  "flink-connector\\flink-authentication-with-gravitino.md": {
+    "source_hash": "0db1b4dced1728092f0685f1b5817bd6ff17b187be968775a6adba96f7d4d1cb",
+    "translated_at": "2026-09-18T08:58:22"
+  },
+  "flink-connector\\flink-catalog-hive.md": {
+    "source_hash": "adb1abd1f97b6298cc4b85daf992bc59719194f623578f0626366bbf380807a6",
+    "translated_at": "2026-09-18T09:03:21"
+  },
+  "flink-connector\\flink-catalog-iceberg.md": {
+    "source_hash": "57eed3adf7c31c440f87a975a65d83b9c28307c8365aade36b756a0db9561977",
+    "translated_at": "2026-09-18T09:10:22"
+  },
+  "flink-connector\\flink-catalog-jdbc.md": {
+    "source_hash": "1b819c87d24208ab336a8f56dc59909cd29906b9ad14eb012f50393cc604d588",
+    "translated_at": "2026-09-18T09:13:02"
+  },
+  "flink-connector\\flink-catalog-paimon.md": {
+    "source_hash": "97e391cdfe69646f1bee9e5c560f2ea0182372bc5f6e66725eed49e5ecd1a167",
+    "translated_at": "2026-09-18T09:17:20"
+  },
+  "flink-connector\\flink-connector.md": {
+    "source_hash": "b5336ea0f242d40d7fb6835ecb0938722cec65600fea4a3961f752a8af390891",
+    "translated_at": "2026-09-18T09:24:03"
+  },
+  "functions.md": {
+    "source_hash": "7c0be594417210ead71c8cdfb6c67f0ab80569c36f65a9ce163e7deedd90736d",
+    "translated_at": "2026-09-18T09:32:34"
+  },
+  "getting-started\\aws-remote-access.md": {
+    "source_hash": "9d1911ac7c1b082377419f2c40d06aefeef82b2186c316047b3aca2a6ea505fe",
+    "translated_at": "2026-09-18T09:33:58"
+  },
+  "getting-started\\hive.md": {
+    "source_hash": "74d09a75e6cbcd48afd590862ec5215d13482d87c6094c6a428296f597408a2a",
+    "translated_at": "2026-09-18T09:34:59"
+  },
+  "getting-started\\index.md": {
+    "source_hash": "1b830b331e57d81f8c8cb7e33231324066078f6e2108c6e4d5162560fc575a83",
+    "translated_at": "2026-09-18T09:46:29"
+  },
+  "getting-started\\playground.md": {
+    "source_hash": "c4bb47ab66825a997e66d32fd0ff3311f602d6166bc26f7e2865e73804f88912",
+    "translated_at": "2026-09-18T09:49:16"
+  },
+  "glossary.md": {
+    "source_hash": "d55e193aa9cf1e5ce81ac6eb8b18fc205a2a76877d20ee1638091660f8b3116e",
+    "translated_at": "2026-09-18T10:25:41"
+  },
+  "gravitino-mcp-server.md": {
+    "source_hash": "f2825e8189b64155bfefed32a07bc1d022367da30d146ad4e843783674b29f8a",
+    "translated_at": "2026-09-18T10:42:13"
+  },
+  "gravitino-server-config.md": {
+    "source_hash": "a520a5f582ee105447a582f081225c17b720595e50a999325031a34498f41eb3",
+    "translated_at": "2026-09-18T11:45:44"
+  },
+  "health-and-readiness.md": {
+    "source_hash": "344ef2baa87283de31acc2f82d3bf636430bd4884ab787cfc92371516c9a09eb",
+    "translated_at": "2026-09-18T12:13:20"
+  },
+  "hive-catalog-with-cloud-storage.md": {
+    "source_hash": "dcf2e699b7b82b83b61afff62d260c74a0830ea6981c80c1fa19f4ff6f906943",
+    "translated_at": "2026-09-18T12:18:11"
+  },
+  "how-to-build.md": {
+    "source_hash": "288f42ae4186a058f97469c18a96e20e4f1fb87f20487b7a378eb61b4a0a9772",
+    "translated_at": "2026-09-18T12:28:43"
+  },
+  "how-to-install.md": {
+    "source_hash": "254a51d023c51aaa19b6f815ba2d0f502b18fa2ecebae30d5cb601b745807795",
+    "translated_at": "2026-09-18T12:37:00"
+  },
+  "how-to-sign-releases.md": {
+    "source_hash": "d2f5039df906be761dccf64d5bdbf8121b33075256673559817189ba170384ac",
+    "translated_at": "2026-09-18T12:42:37"
+  },
+  "how-to-test.md": {
+    "source_hash": "3e09f4d78f32a23a83d9a857a45e88505bb4a980d8d0158f0c1bafd8aee957cf",
+    "translated_at": "2026-09-18T12:47:39"
+  },
+  "how-to-upgrade.md": {
+    "source_hash": "8666dae4d5965ff4be0fa17737568689e090770b1c343e55c1336faf345ca7c2",
+    "translated_at": "2026-09-18T13:03:48"
+  },
+  "how-to-use-gravitino-client.md": {
+    "source_hash": "91a1394d541365c5cbfd5d780c815c110f6f91bd1c7c203ff8d955de1a6b7854",
+    "translated_at": "2026-09-18T13:05:58"
+  },
+  "how-to-use-gvfs.md": {
+    "source_hash": "f498be881caedb52d11394305482ad099c51cd5e52518ad81ee5c1480a5f9595",
+    "translated_at": "2026-09-18T13:27:12"
+  },
+  "how-to-use-python-client.md": {
+    "source_hash": "79998e7d3e03209a48ba8226ec8a20b914c85a4b633bae62472f84118366e171",
+    "translated_at": "2026-09-18T13:36:14"
+  },
+  "how-to-use-relational-backend-storage.md": {
+    "source_hash": "3efebd3b84ba49f8e8b3c980f8eec675430dc48d3c65c80e492f22a322c29a26",
+    "translated_at": "2026-09-18T13:44:25"
+  },
+  "how-to-use-the-playground.md": {
+    "source_hash": "80a7aacb996c6a1a2239d6cdac07643f3e3fb11e167b48fe6607a67f9dcd5590",
+    "translated_at": "2026-09-18T13:53:40"
+  },
+  "iceberg-compaction-policy.md": {
+    "source_hash": "9564447e3c006f2c337bbcf8c7d7839a849b3913d230e0ac9070c4ee9af8c5ea",
+    "translated_at": "2026-09-18T13:58:50"
+  },
+  "iceberg-rest-catalog-chart.md": {
+    "source_hash": "d657d3b7c8d481e5d38406e66feb074d5d140eda9628c2c7793cbd63d9b9c9c1",
+    "translated_at": "2026-09-18T14:01:10"
+  },
+  "iceberg-rest-engine\\doris.md": {
+    "source_hash": "1f16651ec1b5bf73416a6fd019a2eec829b61b0d81d36ac26a3068f3f962ad2b",
+    "translated_at": "2026-09-18T14:03:19"
+  },
+  "iceberg-rest-engine\\flink.md": {
+    "source_hash": "87496009753f16d15e943e207840a884e42e6a758c7f24cabd79ad18ea492db4",
+    "translated_at": "2026-09-18T14:09:29"
+  },
+  "iceberg-rest-engine\\pyiceberg.md": {
+    "source_hash": "cf33c0ea5544ddac6db304e515ffa8ec3117980409f792833df027b0a75a5b66",
+    "translated_at": "2026-09-18T14:10:57"
+  },
+  "iceberg-rest-engine\\ray.md": {
+    "source_hash": "9d6441e38bca32d617794c25f7eac83aec75c3e26c2c169f0819be00569d8379",
+    "translated_at": "2026-09-18T14:14:36"
+  },
+  "iceberg-rest-engine\\spark.md": {
+    "source_hash": "6fe2966de1f9302be55326137da40e7ef3a2f6c2cb1199ca12ca2ba2217e529b",
+    "translated_at": "2026-09-18T14:19:08"
+  },
+  "iceberg-rest-engine\\starrocks.md": {
+    "source_hash": "f84898922a97a5dca09874e4b625f0730f0e53e5e4333af3b3a7dfe045be71de",
+    "translated_at": "2026-09-18T14:19:48"
+  },
+  "iceberg-rest-engine\\trino.md": {
+    "source_hash": "dc3ed5e44907c25869de3bb5b8b2c120499eba735e4ba509bd61aa1f300c338e",
+    "translated_at": "2026-09-18T15:04:14"
+  },
+  "iceberg-rest-service.md": {
+    "source_hash": "c471844babb78a70a13b23547e2227c43ed919b689597d57f1afc08e95889e33",
+    "translated_at": "2026-09-18T16:22:08"
+  },
+  "index.md": {
+    "source_hash": "1b09264fbd50a301823cf937488b0a539ae52aa33a5e8c022f685950055804ef",
+    "translated_at": "2026-09-18T16:39:59"
+  },
+  "jdbc-clickhouse-catalog.md": {
+    "source_hash": "4583787231c2fb7b066065c613f1ebaf7edd441c769966c9db9eb8f91ade19ce",
+    "translated_at": "2026-09-18T16:57:33"
+  },
+  "jdbc-doris-catalog.md": {
+    "source_hash": "169e1e4b5e473c29ec1dc0f8e438b342384edcf30375d79185d34e943f66173b",
+    "translated_at": "2026-09-18T17:16:28"
+  },
+  "jdbc-hologres-catalog.md": {
+    "source_hash": "836dfe701cc6af8cc28f484d2911834ebfef84301e94da89e50071b6afc64e06",
+    "translated_at": "2026-09-18T17:29:54"
+  },
+  "jdbc-mysql-catalog.md": {
+    "source_hash": "66628a4e48c679231b03cc1408c726b82bf41987e7ca004dfe34d2d04822eba3",
+    "translated_at": "2026-09-18T17:55:01"
+  },
+  "jdbc-oceanbase-catalog.md": {
+    "source_hash": "c037d8bd85bd8bd81f45c5f2c84c48e3fca660a910bf9b227c0865ae06c85207",
+    "translated_at": "2026-09-18T18:16:18"
+  },
+  "jdbc-postgresql-catalog.md": {
+    "source_hash": "4f17441cf6f2ccedeef93e047cc5faf59962b73b1170f66068cfc0c75c02d924",
+    "translated_at": "2026-09-18T18:34:18"
+  },
+  "jdbc-starrocks-catalog.md": {
+    "source_hash": "d7bb41956df3cc904e59f41adfe522c688d5428e2393f433aa6d842fe8f3683f",
+    "translated_at": "2026-09-18T18:55:06"
+  },
+  "jobs.md": {
+    "source_hash": "4c2eabd4d101ce3ac50fb9f27f1facc81199d85e8271cbad35cf40d41a0e15b1",
+    "translated_at": "2026-09-18T19:03:43"
+  },
+  "kafka-catalog.md": {
+    "source_hash": "b18f5318eca32dbca5431215d0f0c97128f22e60cf3a1c4c01ae8e2482761e4b",
+    "translated_at": "2026-09-18T19:12:34"
+  },
+  "lakehouse-generic-catalog.md": {
+    "source_hash": "1684029e9a18c3bbb4fe6880e83e8cec2a40c5aac925dfdba4bbfbd9f9705912",
+    "translated_at": "2026-09-18T19:26:54"
+  },
+  "lakehouse-generic-delta-table.md": {
+    "source_hash": "a5b060e4e2edf9ad541f7bb8de74d0718ad5f627383c586296709dc629bbf587",
+    "translated_at": "2026-09-18T19:47:34"
+  },
+  "lakehouse-generic-lance-table.md": {
+    "source_hash": "d2ad83701c2997d1358a75f2b065c2fab58fa72b77ac894fa7bbb280a5862b83",
+    "translated_at": "2026-09-18T20:07:04"
+  },
+  "lakehouse-hudi-catalog.md": {
+    "source_hash": "7cb863589fa63e234dffc329e4059cc8dc3cb8579ffa9566970aa124fde2fea1",
+    "translated_at": "2026-09-18T20:21:12"
+  },
+  "lakehouse-iceberg-catalog.md": {
+    "source_hash": "d852509c7980bf7abe9ea8694dbf28aa4cef3946621adf9ca10086eb978c7fce",
+    "translated_at": "2026-09-18T21:08:05"
+  },
+  "lakehouse-paimon-catalog.md": {
+    "source_hash": "4a08bb4bdab84ee656683b6fa9f2ec09807ea898f200540321b9fb6e810e5a02",
+    "translated_at": "2026-09-18T21:33:48"
+  },
+  "lance-rest-integration.md": {
+    "source_hash": "4a3855868aa6b37fad17e5cf8ea81ae905b1f177281d79687b24882724d984be",
+    "translated_at": "2026-09-18T21:51:23"
+  },
+  "lance-rest-server-chart.md": {
+    "source_hash": "aa2d5833803820d8590342b453be4cb896ce13c96cbf4200864bb41c0e2f147d",
+    "translated_at": "2026-09-18T21:59:58"
+  },
+  "lance-rest-service.md": {
+    "source_hash": "c880a7f95da9bb239c108bae75b3a6be68adb5661f44ca784acc901c9171b7e7",
+    "translated_at": "2026-09-18T22:33:39"
+  },
+  "lineage\\gravitino-server-lineage.md": {
+    "source_hash": "e2458728083795c9b0eac6ac1c79bfcec47d1a760c38b7bc2b5f00cbf49f676e",
+    "translated_at": "2026-09-18T22:38:17"
+  },
+  "lineage\\gravitino-spark-lineage.md": {
+    "source_hash": "de9cd9c971e7761b255221f3dad50693ac40595894f956c71a36009bf2a133d7",
+    "translated_at": "2026-09-18T22:45:12"
+  },
+  "lineage\\lineage.md": {
+    "source_hash": "b6db651d582a9194a0414db5f418cf74bd27aae09608dc952e494f84959b7192",
+    "translated_at": "2026-09-18T22:46:31"
+  },
+  "manage-catalogs-and-schemas.md": {
+    "source_hash": "bb23b4d42201ea4cf6155845c3935cefcbb287ae500c857a67202bd5dc7e9165",
+    "translated_at": "2026-09-18T23:10:57"
+  },
+  "manage-fileset-metadata-using-gravitino.md": {
+    "source_hash": "fec6b5e8b61ce85d5fda2b2008a7650f575a24fe75405c2cca7c98d318c2cb51",
+    "translated_at": "2026-09-18T23:25:08"
+  },
+  "manage-jobs-in-gravitino.md": {
+    "source_hash": "8e0b666796c977f222ada71f6f2f36f075d72c8ab20880f16ad4439e62856338",
+    "translated_at": "2026-09-18T23:41:56"
+  },
+  "manage-messaging-metadata-using-gravitino.md": {
+    "source_hash": "b92b177f2d32ae3865f2d731e068e7f1b18a670db13e2da1d0bea37f2d59bcf5",
+    "translated_at": "2026-09-18T23:52:12"
+  },
+  "manage-metalake-using-gravitino.md": {
+    "source_hash": "24c85d0d47cdb2fbb6f1aab8409e99c09f656ee87dd0eee3aa4f1035fa29d597",
+    "translated_at": "2026-09-19T00:02:02"
+  },
+  "manage-model-metadata-using-gravitino.md": {
+    "source_hash": "ecf64f44d90d536f81e1070118fb87141aae08363583bddf0f529374a8fb371e",
+    "translated_at": "2026-09-19T00:06:24"
+  },
+  "manage-policies-in-gravitino.md": {
+    "source_hash": "43f1ecd9e3d32028e5bdb9178c4a642770b7caa17b31a744e3d6f9ca4e1b03f4",
+    "translated_at": "2026-09-19T00:11:18"
+  },
+  "manage-relational-metadata-using-gravitino.md": {
+    "source_hash": "f5afe345858a222bb7863eced44436b162fa9f20f076e5ea385f26486370dc3e",
+    "translated_at": "2026-09-19T00:15:09"
+  },
+  "manage-statistics-in-gravitino.md": {
+    "source_hash": "bf92e29dfb930e4997e1e28da3635547a9a961641a8b84d55b00ed75808f6b99",
+    "translated_at": "2026-09-19T00:23:42"
+  },
+  "manage-table-partition-using-gravitino.md": {
+    "source_hash": "8adde1e3ff642b2603529b015cf297ba07437f36d2d6dcda81953139676500af",
+    "translated_at": "2026-09-19T00:27:56"
+  },
+  "manage-tags-in-gravitino.md": {
+    "source_hash": "85fc465f637a85cc01efeaeba10bfbb4fe15ce42bd51bc8ad89f814c57195518",
+    "translated_at": "2026-09-19T00:33:24"
+  },
+  "manage-user-defined-function-using-gravitino.md": {
+    "source_hash": "a6b54cff1e85e6f645a96f71cd7ebb12c46c97b48e74c3fa175286631eba5dd8",
+    "translated_at": "2026-09-19T00:36:53"
+  },
+  "manage-view-metadata-using-gravitino.md": {
+    "source_hash": "ef8ab252bf81defc75e5f144dd78f22475f318c8586819d052005a08bb68a6f0",
+    "translated_at": "2026-09-19T00:41:02"
+  },
+  "metalakes.md": {
+    "source_hash": "98ab9dcdedbe70b40d835e5865fda775e9f576c87f61556b4abd08c84b1ba95c",
+    "translated_at": "2026-09-19T00:49:03"
+  },
+  "metrics.md": {
+    "source_hash": "b81c5503fa28f57c0ea941d61b4b4e05b93bd5e9c8bb0f87f2add1540aab7a12",
+    "translated_at": "2026-09-19T00:51:21"
+  },
+  "model-catalog.md": {
+    "source_hash": "aa726c6f3c842a630451bdff7ec7a3689ba3936855b7acc87f15d89f07ce28b0",
+    "translated_at": "2026-09-19T00:58:11"
+  },
+  "overview.md": {
+    "source_hash": "4e676c48f09dca5783460be96a3750c1fc745703be5179031e7220ec5cb8c395",
+    "translated_at": "2026-09-19T01:03:43"
+  },
+  "partitions.md": {
+    "source_hash": "ff7250db1de092ab1734c124c17991d649ec67e599d6cd9b93109a3f6da49e48",
+    "translated_at": "2026-09-19T01:10:55"
+  },
+  "policies.md": {
+    "source_hash": "98541aa0da469c418ee93ad3f164dfd0cd8d9b8205b0a2843df094917376095b",
+    "translated_at": "2026-09-19T01:28:12"
+  },
+  "publish-docker-images.md": {
+    "source_hash": "c158e60f05082917ff8a17dc5783ee630e82d3b521ecec45b5e25b88f7312584",
+    "translated_at": "2026-09-19T01:29:28"
+  },
+  "security\\access-control.md": {
+    "source_hash": "e48cfd815feb731c62e36a2a28aca06e56fdeb6821b946f71c9193c09ae154ee",
+    "translated_at": "2026-09-19T02:18:21"
+  },
+  "security\\authorization-pushdown.md": {
+    "source_hash": "746b545a781918be1df77e1ac9a8cb3b4e821acfc2972e46cbb1b8db253d111c",
+    "translated_at": "2026-09-19T02:27:31"
+  },
+  "security\\credential-vending.md": {
+    "source_hash": "1f58cb01a3a52a78a85f911fa632856dee746288282956b96afa81508d4cb7da",
+    "translated_at": "2026-09-19T02:59:57"
+  },
+  "security\\how-to-authenticate.md": {
+    "source_hash": "42474e3900131850f94ff1f77714d0e81f4d88aaa323bdbe291e8f8143aca081",
+    "translated_at": "2026-09-19T03:26:20"
+  },
+  "security\\how-to-use-cors.md": {
+    "source_hash": "2135388a53827cb9f20c4fc1f4eac40faefdaa704193bbb555ce79c20a217d0e",
+    "translated_at": "2026-09-19T03:28:28"
+  },
+  "security\\how-to-use-https.md": {
+    "source_hash": "a142e40c52aabc2a90729eff79d718e0d59e8eabfa7ee0c89ab220fe15e089b3",
+    "translated_at": "2026-09-19T03:31:21"
+  },
+  "security\\local-users-and-groups.md": {
+    "source_hash": "cfba7b69e102c9c6d01ce9ec706baf7707884fa97f07365a1fbc8c00006cf647",
+    "translated_at": "2026-09-19T03:38:47"
+  },
+  "spark-connector\\spark-authentication-with-gravitino.md": {
+    "source_hash": "16e5ece8b358dd2a2e47d735236b956b9883aadbad36287e547b913629de3820",
+    "translated_at": "2026-09-19T03:41:57"
+  },
+  "spark-connector\\spark-catalog-glue.md": {
+    "source_hash": "b2aaa0a1bafeecbdff2d02d5ee508bef1d11be890736a7841bf3f942a13a3c91",
+    "translated_at": "2026-09-19T03:52:32"
+  },
+  "spark-connector\\spark-catalog-hive.md": {
+    "source_hash": "4b342c2811da5febd7a0fa39b7d83ea2ff12e735431b5f648d1ff35c75ad16c7",
+    "translated_at": "2026-09-19T03:54:48"
+  },
+  "spark-connector\\spark-catalog-iceberg.md": {
+    "source_hash": "5e3ef40905c960204c3e0f00a20d220e4808176ceb398c03ba37408e1a8fb6df",
+    "translated_at": "2026-09-19T04:10:33"
+  },
+  "spark-connector\\spark-catalog-jdbc.md": {
+    "source_hash": "17b47076fb760957adc97d64ee92c834013ba54d1a392de5f7b90a79df2a1a40",
+    "translated_at": "2026-09-19T04:12:32"
+  },
+  "spark-connector\\spark-catalog-paimon.md": {
+    "source_hash": "cf91c30630f89267bc685bbd94492a5a4b25568795d3eae45b3d58d0b2143a49",
+    "translated_at": "2026-09-19T04:16:12"
+  },
+  "spark-connector\\spark-connector-udf.md": {
+    "source_hash": "f47a0637fa5f61e203f790478f70ace808927e81758ca8af8cc9681f368d20d0",
+    "translated_at": "2026-09-19T04:19:07"
+  },
+  "spark-connector\\spark-connector.md": {
+    "source_hash": "4a9b0bd68509bb7f6641b24ddf222af2c39247ba4c504297c1b111f3ab4d2277",
+    "translated_at": "2026-09-19T04:25:11"
+  },
+  "spark-connector\\spark-integration-test.md": {
+    "source_hash": "1c6ea358acc00c53ffef4c826c0c1c6bf89c508d96fb4be0fbd8c7ff6cb9b5bb",
+    "translated_at": "2026-09-19T04:27:19"
+  },
+  "statistics.md": {
+    "source_hash": "d65ce9d8247357be69f89946953c0ce11ea70cb4ed057ee1e26df50bfc34bcb8",
+    "translated_at": "2026-09-19T04:31:34"
+  },
+  "table-maintenance-service\\optimizer-cli-reference.md": {
+    "source_hash": "2d03cfc5adc11e49db952a1650011d43ca14d81efdaf12c2dcc7421f0a6e9d58",
+    "translated_at": "2026-09-19T04:44:12"
+  },
+  "table-maintenance-service\\optimizer-configuration.md": {
+    "source_hash": "dc232e731278c4625d537310213d4ebf1ae2db16603e4b911f936cdf94193fc8",
+    "translated_at": "2026-09-19T04:49:59"
+  },
+  "table-maintenance-service\\optimizer-extension-guide.md": {
+    "source_hash": "24c874814a38de92ac5425a8e09552d310b8a3f8bbeaf82a290dc5d81fd61519",
+    "translated_at": "2026-09-19T04:53:57"
+  },
+  "table-maintenance-service\\optimizer-troubleshooting.md": {
+    "source_hash": "cae34557b6ff27f08bde7807997f0b8bcff1dae6b42af01bba41aa10b74353c4",
+    "translated_at": "2026-09-19T05:01:37"
+  },
+  "table-maintenance-service\\optimizer.md": {
+    "source_hash": "5d06d1ffbd6d51413eacf76de7966e4b2929ec90b2e81597374a174102971821",
+    "translated_at": "2026-09-19T05:15:04"
+  },
+  "table-partitioning-distribution-sort-order-indexes.md": {
+    "source_hash": "0451eba4af4f4e5485d06a370e7b6172d3cac7a77ef47c2b1bf6492493b60343",
+    "translated_at": "2026-09-19T05:23:48"
+  },
+  "tables-and-views.md": {
+    "source_hash": "e31e71add1282bd30fe38db21afd5fc7c3cd41081b8cfd4d7dfc2f82626576a2",
+    "translated_at": "2026-09-19T05:39:34"
+  },
+  "tags.md": {
+    "source_hash": "9f67d684fda9ad01f0782d2507c1cb9ac8daba004453a196827654f53d825c92",
+    "translated_at": "2026-09-19T05:57:12"
+  },
+  "topics.md": {
+    "source_hash": "c2fd1bb1035b93ff778a9af5b19faed4979c04be7e6d08d1f0103117cb1286c6",
+    "translated_at": "2026-09-19T06:02:39"
+  },
+  "trino-connector\\authentication.md": {
+    "source_hash": "4c791093c1a36dd5a178fa0a252ead338252b749b94c6b3b0ee44df08fa024a2",
+    "translated_at": "2026-09-19T06:16:51"
+  },
+  "trino-connector\\catalog-glue.md": {
+    "source_hash": "34f844247a94f7a9569c8616aa6f10d77b3f55f2b825ba2c65c89b03babca131",
+    "translated_at": "2026-09-19T06:25:58"
+  },
+  "trino-connector\\catalog-hive.md": {
+    "source_hash": "e99862a04165b13020f55a2503c95d023c48c74ed0e374da2eeff0c618529833",
+    "translated_at": "2026-09-19T06:42:24"
+  },
+  "trino-connector\\catalog-iceberg.md": {
+    "source_hash": "d370dbf0c0b4e454200b86ae9506b39e78c28e3c13ce960ae9ef36093e4546b8",
+    "translated_at": "2026-09-19T07:00:05"
+  },
+  "trino-connector\\catalog-mysql.md": {
+    "source_hash": "e9d44d1055b3c6484dd666d92ae6ac7d39edcd3c9b096deac24c6282f40b5553",
+    "translated_at": "2026-09-19T07:05:14"
+  },
+  "trino-connector\\catalog-postgresql.md": {
+    "source_hash": "01facb261af5fdf99f7acc5d55e649acc43c7594169231f3b06bdf4ccdacdeef",
+    "translated_at": "2026-09-19T07:08:00"
+  },
+  "trino-connector\\configuration.md": {
+    "source_hash": "b81c9f387d2fa2e024f261cb54a84d2b2ff31a77ff5c432cd2ec8e92b2c634e4",
+    "translated_at": "2026-09-19T07:16:45"
+  },
+  "trino-connector\\development.md": {
+    "source_hash": "667a202ab43696cfc2d3647c4eadc105e71423df68231c64d8066d4e15cb6648",
+    "translated_at": "2026-09-19T07:20:45"
+  },
+  "trino-connector\\index.md": {
+    "source_hash": "eb7b7f3f51edcd2f10bcc8fac5b2010d5f5b105a3e8406005fc67be65d7104f8",
+    "translated_at": "2026-09-19T07:21:12"
+  },
+  "trino-connector\\installation.md": {
+    "source_hash": "a9f70234af253c2ebcee0314974ac9388fdac8249d1eaddd64e715df0d19b7f3",
+    "translated_at": "2026-09-19T07:27:02"
+  },
+  "trino-connector\\requirements.md": {
+    "source_hash": "34c901bc52bf0003cf479a4e74f841cadbf4c8e976aaaa701cd755fce827d91e",
+    "translated_at": "2026-09-19T07:27:32"
+  },
+  "trino-connector\\sql-support.md": {
+    "source_hash": "e7853e1dac2e593a75fc01f65a0fc2e2e874559560234625c5b99639074e9bb8",
+    "translated_at": "2026-09-19T07:29:19"
+  },
+  "trino-connector\\supported-catalog.md": {
+    "source_hash": "a53bd3aad49000c6ffa828d534c347f1dbce82a2d7463aecec4f51ec0d58a35e",
+    "translated_at": "2026-09-19T07:44:47"
+  },
+  "trino-connector\\trino-cascading-query.md": {
+    "source_hash": "436b5ddd01438ffa50f8e9b26b400b5f69492eb13508cc8bc3f1f540bba2ac67",
+    "translated_at": "2026-09-19T07:49:03"
+  },
+  "trino-connector\\trino-connector.md": {
+    "source_hash": "c62e316555fc604d48759fbf862c08c1b9dc4109170cb9c9fa5edb1b1f18ba51",
+    "translated_at": "2026-09-19T07:50:28"
+  },
+  "trino-connector\\udf-support.md": {
+    "source_hash": "7f0c8ecd7eb537f70a8236fde9ca60d64f8293f2da19859b04dcf716f9561e8c",
+    "translated_at": "2026-09-19T07:53:02"
+  },
+  "webui-v2.md": {
+    "source_hash": "f4c47c57619f912f706180d6dedd31cb0c243c574b21184f400a9ddde53ec5f3",
+    "translated_at": "2026-09-19T08:14:19"
+  },
+  "webui.md": {
+    "source_hash": "53da2779349c61d3ad2fd5558d3a1f89b7a3ea77d8b04e52adc1eeb307b42f17",
+    "translated_at": "2026-09-19T09:07:35"
+  }
+}

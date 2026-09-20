@@ -71,3 +71,10 @@ web/.next
 *.swp
 *.swo
 .*.sw?
+
+# Translation temp files
+.env
+.env.translator
+.translate-log.txt
+.venv-translator/
+
