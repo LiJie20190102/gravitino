@@ -99,7 +99,7 @@ jobs:
             ---
             Review the wording and file changes, then merge when ready.
           branch: update-zh-cn-translations
-          base: main
+          base: translate_test
           labels: translation, automated-pr
           delete-branch: true
           add-paths: |
