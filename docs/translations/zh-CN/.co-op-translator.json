@@ -1,841 +1,841 @@
 {
   "apache-hive-catalog.md": {
-    "original_hash": "6c4e5a064d3e908443a7690fcdf6988e",
-    "translation_date": "2026-09-20T14:12:39.621793",
+    "original_hash": "a1b23e8680c0596bfd4996d79a3e4382",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "apache-hive-catalog.md",
     "language_code": "zh-CN"
   },
   "aws-glue-catalog.md": {
-    "original_hash": "77e3ce7561d60bc593e09a08d3f2e238",
-    "translation_date": "2026-09-20T14:12:39.624051",
+    "original_hash": "eef3455f1aa2b02120fa1b231fe7ee3c",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "aws-glue-catalog.md",
     "language_code": "zh-CN"
   },
   "catalogs-and-schemas.md": {
-    "original_hash": "54e788fb1c1c6fb48c5fed24af857546",
-    "translation_date": "2026-09-20T14:12:39.625037",
+    "original_hash": "c9338c1ebec26459fb1eefcb58a17144",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "catalogs-and-schemas.md",
     "language_code": "zh-CN"
   },
   "chart.md": {
-    "original_hash": "ef31bcac9061abef75c7c1e2460d51bd",
-    "translation_date": "2026-09-20T14:12:39.625037",
+    "original_hash": "41ad1acccee16ad7a058772db454b997",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "chart.md",
     "language_code": "zh-CN"
   },
   "daft-connector/daft-connector.md": {
-    "original_hash": "8e5eabd8959253416a6ed38efba60c99",
-    "translation_date": "2026-09-20T14:12:39.698253",
+    "original_hash": "edfede0fbfbeba29d1414a6c0cd5cf80",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "daft-connector/daft-connector.md",
     "language_code": "zh-CN"
   },
   "development/custom-job-executor.md": {
-    "original_hash": "240b2948bf10c85ce16875329b2dd49c",
-    "translation_date": "2026-09-20T14:12:39.698253",
+    "original_hash": "75a822a037c226bba849ddd16488f998",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "development/custom-job-executor.md",
     "language_code": "zh-CN"
   },
   "development/custom-partition-storage.md": {
-    "original_hash": "61d536997fa0afe4f1231bfeb9f22b84",
-    "translation_date": "2026-09-20T14:12:39.699252",
+    "original_hash": "0f566f782d7eada646bc5b71e57f13db",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "development/custom-partition-storage.md",
     "language_code": "zh-CN"
   },
   "docker-image-details.md": {
-    "original_hash": "19bbbf5ed4b564d059f79b06044bd2b3",
-    "translation_date": "2026-09-20T14:12:39.627042",
+    "original_hash": "7baee516a50b7c9cbcf0e39faa64eccd",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "docker-image-details.md",
     "language_code": "zh-CN"
   },
   "expression.md": {
-    "original_hash": "5ab18d57f2f99921227d504aa73acbc4",
-    "translation_date": "2026-09-20T14:12:39.628039",
+    "original_hash": "33d8e881c05b2e4d977db68371065ce6",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "expression.md",
     "language_code": "zh-CN"
   },
   "fileset-catalog-index.md": {
-    "original_hash": "b8c701f905c72f884dac914ea86f8530",
-    "translation_date": "2026-09-20T14:12:39.629039",
+    "original_hash": "bbf66150b8e5121e560b8f8912888f44",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "fileset-catalog-index.md",
     "language_code": "zh-CN"
   },
   "fileset-catalog-with-adls.md": {
-    "original_hash": "73229fa36d6b90b3da7232b3caf3763c",
-    "translation_date": "2026-09-20T14:12:39.630038",
+    "original_hash": "4af4284a31e2f6851109c69bfb215831",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "fileset-catalog-with-adls.md",
     "language_code": "zh-CN"
   },
   "fileset-catalog-with-cos.md": {
-    "original_hash": "d689e767350eeea54cdafffcd368b77a",
-    "translation_date": "2026-09-20T14:12:39.631036",
+    "original_hash": "c63ca363ebb3b57cf23340fba97c14ff",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "fileset-catalog-with-cos.md",
     "language_code": "zh-CN"
   },
   "fileset-catalog-with-gcs.md": {
-    "original_hash": "eb5ed241ceba0ad56cf6479203c19f38",
-    "translation_date": "2026-09-20T14:12:39.632365",
+    "original_hash": "da48ae31f566ec61781a22dfc8af385d",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "fileset-catalog-with-gcs.md",
     "language_code": "zh-CN"
   },
   "fileset-catalog-with-oss.md": {
-    "original_hash": "966db0ba71515a672511c5582fff1453",
-    "translation_date": "2026-09-20T14:12:39.633361",
+    "original_hash": "846b97f0a3f146f03798ad10b72bb570",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "fileset-catalog-with-oss.md",
     "language_code": "zh-CN"
   },
   "fileset-catalog-with-s3.md": {
-    "original_hash": "3a5c09c9e629b483b7cc846d8f158726",
-    "translation_date": "2026-09-20T14:12:39.634361",
+    "original_hash": "a25e55976919565ead64bfda41904499",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "fileset-catalog-with-s3.md",
     "language_code": "zh-CN"
   },
   "fileset-catalog.md": {
-    "original_hash": "deae8b9dee4cff098d6b7d1025c4ad0d",
-    "translation_date": "2026-09-20T14:12:39.635364",
+    "original_hash": "8860b01469b3e75a9697a7a3504d8f0e",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "fileset-catalog.md",
     "language_code": "zh-CN"
   },
   "filesets.md": {
-    "original_hash": "9b4f7b78bf84876c61918478a7df4e2b",
-    "translation_date": "2026-09-20T14:12:39.637364",
+    "original_hash": "6531b3c29e28bfc977223e1cf8bd8b3a",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "filesets.md",
     "language_code": "zh-CN"
   },
   "flink-connector/flink-authentication-with-gravitino.md": {
-    "original_hash": "efc8802203b036552e9a2445d70b8385",
-    "translation_date": "2026-09-20T14:12:39.699252",
+    "original_hash": "952ff870b0a358ec74e794c3bfa70454",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "flink-connector/flink-authentication-with-gravitino.md",
     "language_code": "zh-CN"
   },
   "flink-connector/flink-catalog-hive.md": {
-    "original_hash": "b4b0634524bc4b4252a2a8efef918f83",
-    "translation_date": "2026-09-20T14:12:39.700251",
+    "original_hash": "668c82cfd3a8866274bc6efbd4f2c486",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "flink-connector/flink-catalog-hive.md",
     "language_code": "zh-CN"
   },
   "flink-connector/flink-catalog-iceberg.md": {
-    "original_hash": "ab653215e0e3509a8fe90f9ac6a20423",
-    "translation_date": "2026-09-20T14:12:39.700684",
+    "original_hash": "48239ed7cf6f994e642802c9c63178c9",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "flink-connector/flink-catalog-iceberg.md",
     "language_code": "zh-CN"
   },
   "flink-connector/flink-catalog-jdbc.md": {
-    "original_hash": "c911c0dc9f82e3b2793edd59fbed36c6",
-    "translation_date": "2026-09-20T14:12:39.701104",
+    "original_hash": "e1f149e61a68c3e7422f2ecaaed7b5aa",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "flink-connector/flink-catalog-jdbc.md",
     "language_code": "zh-CN"
   },
   "flink-connector/flink-catalog-paimon.md": {
-    "original_hash": "ac2aa5c51a1a8a137f2a91d7e1712f64",
-    "translation_date": "2026-09-20T14:12:39.701104",
+    "original_hash": "7de594b679886bdae1f6882eae90e868",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "flink-connector/flink-catalog-paimon.md",
     "language_code": "zh-CN"
   },
   "flink-connector/flink-connector.md": {
-    "original_hash": "0220c70f66dc68e71a0c7fbe1376e3c4",
-    "translation_date": "2026-09-20T14:12:39.701104",
+    "original_hash": "a71adcd2449a89648b80fd116fc778f8",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "flink-connector/flink-connector.md",
     "language_code": "zh-CN"
   },
   "functions.md": {
-    "original_hash": "08a046017dd01beeb6c2561b9c7cfd66",
-    "translation_date": "2026-09-20T14:12:39.637364",
+    "original_hash": "74b354efd6cf172909f1ce270d7cd890",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "functions.md",
     "language_code": "zh-CN"
   },
   "getting-started/aws-remote-access.md": {
-    "original_hash": "e5804f148ea4654add919713bad2f755",
-    "translation_date": "2026-09-20T14:12:39.702536",
+    "original_hash": "73ac70185e819ec9deedb69678326ea0",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "getting-started/aws-remote-access.md",
     "language_code": "zh-CN"
   },
   "getting-started/hive.md": {
-    "original_hash": "6686d64f8d1377def21a852454aeadcf",
-    "translation_date": "2026-09-20T14:12:39.703562",
+    "original_hash": "d7ad0d7ffa101587c4ad03dd88e88622",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "getting-started/hive.md",
     "language_code": "zh-CN"
   },
   "getting-started/index.md": {
-    "original_hash": "31a6d6f190545084efa1bcb773cf1f59",
-    "translation_date": "2026-09-20T14:12:39.704551",
+    "original_hash": "83d3743482cb057961801022fcf210f0",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "getting-started/index.md",
     "language_code": "zh-CN"
   },
   "getting-started/playground.md": {
-    "original_hash": "8474cfffa4518c4f6dc72ef4ed8192ec",
-    "translation_date": "2026-09-20T14:12:39.704551",
+    "original_hash": "0dd968ea9ae383a98585048ed1461190",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "getting-started/playground.md",
     "language_code": "zh-CN"
   },
   "glossary.md": {
-    "original_hash": "e24de2a78241e6590e83f6c67c891aee",
-    "translation_date": "2026-09-20T14:12:39.638362",
+    "original_hash": "93b017d94bf6373094afc105f5a6a631",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "glossary.md",
     "language_code": "zh-CN"
   },
   "gravitino-mcp-server.md": {
-    "original_hash": "c1600347950b3a2dfc8a38035b1f5031",
-    "translation_date": "2026-09-20T14:12:39.639707",
+    "original_hash": "69c0f1efe5a2eedf09c1f3c2ca3ce588",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "gravitino-mcp-server.md",
     "language_code": "zh-CN"
   },
   "gravitino-server-config.md": {
-    "original_hash": "b3c0c8cfe0beff06bef39247070b0157",
-    "translation_date": "2026-09-20T14:12:39.641212",
+    "original_hash": "b1e6fedd06a23247f12a90e00a13510b",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "gravitino-server-config.md",
     "language_code": "zh-CN"
   },
   "health-and-readiness.md": {
-    "original_hash": "2f496a888ca93e8efd5e20e51aab2a56",
-    "translation_date": "2026-09-20T14:12:39.642928",
+    "original_hash": "bd54c7f7ec47f3381b809af0b39fcc46",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "health-and-readiness.md",
     "language_code": "zh-CN"
   },
   "hive-catalog-with-cloud-storage.md": {
-    "original_hash": "c5a5071737111e60aea99f87dd2d4785",
-    "translation_date": "2026-09-20T14:12:39.643731",
+    "original_hash": "c56954fcae91e01c8dda397ce3140e96",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "hive-catalog-with-cloud-storage.md",
     "language_code": "zh-CN"
   },
   "how-to-build.md": {
-    "original_hash": "50111bb108cfcc286399424d4bac50f6",
-    "translation_date": "2026-09-20T14:12:39.644737",
+    "original_hash": "546a4df9e4de4622e1bd6b6ab14c0adf",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "how-to-build.md",
     "language_code": "zh-CN"
   },
   "how-to-install.md": {
-    "original_hash": "487e9779c7ed419a21ef2b06a0e3420c",
-    "translation_date": "2026-09-20T14:12:39.645736",
+    "original_hash": "8ab260e1da5942d6b1018a72852525ef",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "how-to-install.md",
     "language_code": "zh-CN"
   },
   "how-to-sign-releases.md": {
-    "original_hash": "a18433ac87bc72b6bcaf7a87258b5136",
-    "translation_date": "2026-09-20T14:12:39.645736",
+    "original_hash": "f8ddd2f63d9a91263f88ef530da985ca",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "how-to-sign-releases.md",
     "language_code": "zh-CN"
   },
   "how-to-test.md": {
-    "original_hash": "4589dc63355f81d4fd3ec851a4d5d0a0",
-    "translation_date": "2026-09-20T14:12:39.646738",
+    "original_hash": "42b16ef219d717a82efc22614c467977",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "how-to-test.md",
     "language_code": "zh-CN"
   },
   "how-to-upgrade.md": {
-    "original_hash": "d25be474d86197f9493a55dc13450e93",
-    "translation_date": "2026-09-20T14:12:39.647735",
+    "original_hash": "02eae4e04e33d8a8aa22b4e4ce0b4c60",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "how-to-upgrade.md",
     "language_code": "zh-CN"
   },
   "how-to-use-gravitino-client.md": {
-    "original_hash": "8064cac2e15c83a92b4a31eb24f62353",
-    "translation_date": "2026-09-20T14:12:39.647735",
+    "original_hash": "e2f47be7b2079ef6145912a730164801",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "how-to-use-gravitino-client.md",
     "language_code": "zh-CN"
   },
   "how-to-use-gvfs.md": {
-    "original_hash": "9275a0175e3bc6c63ac9563704a102f9",
-    "translation_date": "2026-09-20T14:12:39.649750",
+    "original_hash": "685d08e9bc6100e3af7a85d3d63a9f7e",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "how-to-use-gvfs.md",
     "language_code": "zh-CN"
   },
   "how-to-use-python-client.md": {
-    "original_hash": "3619792a284035a24abe2e273127f0cb",
-    "translation_date": "2026-09-20T14:12:39.649750",
+    "original_hash": "76126317fc76555eb26243ff99ebf031",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "how-to-use-python-client.md",
     "language_code": "zh-CN"
   },
   "how-to-use-relational-backend-storage.md": {
-    "original_hash": "2214e1029e2ae3678828796a38681da5",
-    "translation_date": "2026-09-20T14:12:39.649750",
+    "original_hash": "d99ea846e41bb4dff36e298556dacdec",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "how-to-use-relational-backend-storage.md",
     "language_code": "zh-CN"
   },
   "how-to-use-the-playground.md": {
-    "original_hash": "bf3629fb35eacad33bcf6eb7a233e310",
-    "translation_date": "2026-09-20T14:12:39.652269",
+    "original_hash": "cc931ff612439e65bdf0b48d72034576",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "how-to-use-the-playground.md",
     "language_code": "zh-CN"
   },
   "iceberg-compaction-policy.md": {
-    "original_hash": "a16c255dd425c17fbfaa8c72b0959562",
-    "translation_date": "2026-09-20T14:12:39.652269",
+    "original_hash": "2bf8548059de8c04c25e3aa68dd4ff36",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "iceberg-compaction-policy.md",
     "language_code": "zh-CN"
   },
   "iceberg-rest-catalog-chart.md": {
-    "original_hash": "54aa89bf3318ebc54c468d6e4dd19351",
-    "translation_date": "2026-09-20T14:12:39.653650",
+    "original_hash": "1c871bb0ea27f74dd91e3f6d1cf42158",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "iceberg-rest-catalog-chart.md",
     "language_code": "zh-CN"
   },
   "iceberg-rest-engine/doris.md": {
-    "original_hash": "e50a44c36a7cff60b48276b3be7136e7",
-    "translation_date": "2026-09-20T14:12:39.705553",
+    "original_hash": "ad8604060e1dc194c96f20e7d00b66e5",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "iceberg-rest-engine/doris.md",
     "language_code": "zh-CN"
   },
   "iceberg-rest-engine/flink.md": {
-    "original_hash": "99265a88c1b8e367edebe4358e248d93",
-    "translation_date": "2026-09-20T14:12:39.706550",
+    "original_hash": "6c9c3bb2a329d67d34d6778c6ed787c4",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "iceberg-rest-engine/flink.md",
     "language_code": "zh-CN"
   },
   "iceberg-rest-engine/pyiceberg.md": {
-    "original_hash": "097236f50c1456d661707ec9ef7e2f8b",
-    "translation_date": "2026-09-20T14:12:39.707549",
+    "original_hash": "1b21bd9dc6d5f8bdddf8dce265df85c5",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "iceberg-rest-engine/pyiceberg.md",
     "language_code": "zh-CN"
   },
   "iceberg-rest-engine/ray.md": {
-    "original_hash": "48a95a284d6c40f317e4b87b05d04af4",
-    "translation_date": "2026-09-20T14:12:39.707549",
+    "original_hash": "c48f124ac70f7bf5ec4f66749653f542",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "iceberg-rest-engine/ray.md",
     "language_code": "zh-CN"
   },
   "iceberg-rest-engine/spark.md": {
-    "original_hash": "72cf66e7b782a21f288632a6a979d138",
-    "translation_date": "2026-09-20T14:12:39.708549",
+    "original_hash": "61f66d92a74893f73d090eab9b707ae8",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "iceberg-rest-engine/spark.md",
     "language_code": "zh-CN"
   },
   "iceberg-rest-engine/starrocks.md": {
-    "original_hash": "bac2a7c0ca43637c13078d8e4b059197",
-    "translation_date": "2026-09-20T14:12:39.708549",
+    "original_hash": "bd66bd10d941c6be6b6136c359d34b35",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "iceberg-rest-engine/starrocks.md",
     "language_code": "zh-CN"
   },
   "iceberg-rest-engine/trino.md": {
-    "original_hash": "f0d48e348fb9079f8fe707dab0512b7b",
-    "translation_date": "2026-09-20T14:12:39.709550",
+    "original_hash": "63dc0087ee72ec0a1e06077e18cf4708",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "iceberg-rest-engine/trino.md",
     "language_code": "zh-CN"
   },
   "iceberg-rest-service.md": {
-    "original_hash": "10485145496137fae79b4fac3182dfce",
-    "translation_date": "2026-09-20T14:12:39.654660",
+    "original_hash": "157f12d66d468da277c7aa2157f45abb",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "iceberg-rest-service.md",
     "language_code": "zh-CN"
   },
   "index.md": {
-    "original_hash": "0f439fdc1c479c8aed340209e59e79fa",
-    "translation_date": "2026-09-20T14:12:39.655660",
+    "original_hash": "b33bf695ed9d5a4812caf9b27bbf1dbc",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "index.md",
     "language_code": "zh-CN"
   },
   "jdbc-clickhouse-catalog.md": {
-    "original_hash": "6616ec5cdd6ce285a947266064255297",
-    "translation_date": "2026-09-20T14:12:39.656659",
+    "original_hash": "72bd4e2fe139fac59d57ffdcdd0ca29d",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "jdbc-clickhouse-catalog.md",
     "language_code": "zh-CN"
   },
   "jdbc-doris-catalog.md": {
-    "original_hash": "337e4d3e960f24e6a3f05f327af78406",
-    "translation_date": "2026-09-20T14:12:39.657661",
+    "original_hash": "ce6a32a45d962e2a7e4959c28dde4a72",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "jdbc-doris-catalog.md",
     "language_code": "zh-CN"
   },
   "jdbc-hologres-catalog.md": {
-    "original_hash": "c1956da2a8127d5a3d0996a89e74a16a",
-    "translation_date": "2026-09-20T14:12:39.659657",
+    "original_hash": "a4e4b21cea19d679906fe8327bbd6cb8",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "jdbc-hologres-catalog.md",
     "language_code": "zh-CN"
   },
   "jdbc-mysql-catalog.md": {
-    "original_hash": "019241c77efae231736b7d53a716354b",
-    "translation_date": "2026-09-20T14:12:39.659657",
+    "original_hash": "f13c98269662a621e3e0aaf9075896fe",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "jdbc-mysql-catalog.md",
     "language_code": "zh-CN"
   },
   "jdbc-oceanbase-catalog.md": {
-    "original_hash": "5c1a92eb4b083fea66c7a4967b1f737d",
-    "translation_date": "2026-09-20T14:12:39.661166",
+    "original_hash": "26af7891c3fd976772fc2c41e1ea4c23",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "jdbc-oceanbase-catalog.md",
     "language_code": "zh-CN"
   },
   "jdbc-postgresql-catalog.md": {
-    "original_hash": "be7a96af42e436e953cada60069d63e2",
-    "translation_date": "2026-09-20T14:12:39.662172",
+    "original_hash": "58642d30a7acd7f17b304f396c475f3e",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "jdbc-postgresql-catalog.md",
     "language_code": "zh-CN"
   },
   "jdbc-starrocks-catalog.md": {
-    "original_hash": "b8159f393cc08985b9f8ef4b528d6bcb",
-    "translation_date": "2026-09-20T14:12:39.663180",
+    "original_hash": "94da6b36c5fdea6c89c5eb8bb68d55ba",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "jdbc-starrocks-catalog.md",
     "language_code": "zh-CN"
   },
   "jobs.md": {
-    "original_hash": "d3a48dbfefc2d9991f95ec279984fac7",
-    "translation_date": "2026-09-20T14:12:39.663180",
+    "original_hash": "8ed3957daf81b579db35d3ed451b2112",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "jobs.md",
     "language_code": "zh-CN"
   },
   "kafka-catalog.md": {
-    "original_hash": "bb60728f7083c7f9aefd04b6fed46614",
-    "translation_date": "2026-09-20T14:12:39.664180",
+    "original_hash": "9334bb1e0e29b1fcb5681ec6a81c2dcd",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "kafka-catalog.md",
     "language_code": "zh-CN"
   },
   "lakehouse-generic-catalog.md": {
-    "original_hash": "5a253d9809b229edaaba58b290bcb7ad",
-    "translation_date": "2026-09-20T14:12:39.665193",
+    "original_hash": "7a89e8334096d4ae6a87119629fff66e",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "lakehouse-generic-catalog.md",
     "language_code": "zh-CN"
   },
   "lakehouse-generic-delta-table.md": {
-    "original_hash": "9e94d86b443916ddad8494e327171cb9",
-    "translation_date": "2026-09-20T14:12:39.666183",
+    "original_hash": "869c3c43b6fcb1dbf2bdbb3794bce6cc",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "lakehouse-generic-delta-table.md",
     "language_code": "zh-CN"
   },
   "lakehouse-generic-lance-table.md": {
-    "original_hash": "8fd6718fce41bfdaeb618af6798a660c",
-    "translation_date": "2026-09-20T14:12:39.668614",
+    "original_hash": "5c1c6d80c7f05f0db18ed93b185507d4",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "lakehouse-generic-lance-table.md",
     "language_code": "zh-CN"
   },
   "lakehouse-hudi-catalog.md": {
-    "original_hash": "db8909742f857b3b1a53c910062f4072",
-    "translation_date": "2026-09-20T14:12:39.669614",
+    "original_hash": "cacd0bde681d8aa90f29b20830722aec",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "lakehouse-hudi-catalog.md",
     "language_code": "zh-CN"
   },
   "lakehouse-iceberg-catalog.md": {
-    "original_hash": "c2cb9e09ee7f63b0106808c2fee4727b",
-    "translation_date": "2026-09-20T14:12:39.671121",
+    "original_hash": "5dde9c0d53f7972f015894d32fcca4b3",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "lakehouse-iceberg-catalog.md",
     "language_code": "zh-CN"
   },
   "lakehouse-paimon-catalog.md": {
-    "original_hash": "05f0ad87f236edd3d9c95573edf2b7a2",
-    "translation_date": "2026-09-20T14:12:39.672138",
+    "original_hash": "22759c573a3f1230fb0276d89ac5b425",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "lakehouse-paimon-catalog.md",
     "language_code": "zh-CN"
   },
   "lance-rest-integration.md": {
-    "original_hash": "d18c3eaf2a3592004e4740d31247299b",
-    "translation_date": "2026-09-20T14:12:39.673133",
+    "original_hash": "bdd626b2f8c0395525c969f23ffa56db",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "lance-rest-integration.md",
     "language_code": "zh-CN"
   },
   "lance-rest-server-chart.md": {
-    "original_hash": "9443ad6a47faf612bb68f7c05ca9668f",
-    "translation_date": "2026-09-20T14:12:39.674133",
+    "original_hash": "f074b17662620bc8ff63f3466b9a9372",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "lance-rest-server-chart.md",
     "language_code": "zh-CN"
   },
   "lance-rest-service.md": {
-    "original_hash": "30fa5b13132f4727b47dac94df5d8557",
-    "translation_date": "2026-09-20T14:12:39.675128",
+    "original_hash": "ad2ab10b0192948eb8dfc5a148dfa52d",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "lance-rest-service.md",
     "language_code": "zh-CN"
   },
   "lineage/gravitino-server-lineage.md": {
-    "original_hash": "8ad7b19406249a95126b839edd578202",
-    "translation_date": "2026-09-20T14:12:39.709550",
+    "original_hash": "9f1743c139d3bce2b6720b3a6b3a9d4a",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "lineage/gravitino-server-lineage.md",
     "language_code": "zh-CN"
   },
   "lineage/gravitino-spark-lineage.md": {
-    "original_hash": "00466240af783f422d09b3a6ef7c9cb5",
-    "translation_date": "2026-09-20T14:12:39.711055",
+    "original_hash": "eef8785cce31126ae686915bbe44ce69",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "lineage/gravitino-spark-lineage.md",
     "language_code": "zh-CN"
   },
   "lineage/lineage.md": {
-    "original_hash": "ffa49dcfda6306479842ad3117389d74",
-    "translation_date": "2026-09-20T14:12:39.712068",
+    "original_hash": "361747c6ab8fca5b0a5cb80c3869c9a4",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "lineage/lineage.md",
     "language_code": "zh-CN"
   },
   "manage-catalogs-and-schemas.md": {
-    "original_hash": "51a2820c9c40f3a1fdcee1d44baee506",
-    "translation_date": "2026-09-20T14:12:39.675128",
+    "original_hash": "5454d3f2a78ced8e99a21f7d76ad9b35",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "manage-catalogs-and-schemas.md",
     "language_code": "zh-CN"
   },
   "manage-fileset-metadata-using-gravitino.md": {
-    "original_hash": "e26a24900f3386248051e0ecbc4a76a2",
-    "translation_date": "2026-09-20T14:12:39.676129",
+    "original_hash": "25491e09edf3d8a5d1674ceadadd3b4b",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "manage-fileset-metadata-using-gravitino.md",
     "language_code": "zh-CN"
   },
   "manage-jobs-in-gravitino.md": {
-    "original_hash": "c83ba3b81ef222cc91cefb3af12bd07a",
-    "translation_date": "2026-09-20T14:12:39.677864",
+    "original_hash": "2de53785296e1e565a4ac4c236762d00",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "manage-jobs-in-gravitino.md",
     "language_code": "zh-CN"
   },
   "manage-messaging-metadata-using-gravitino.md": {
-    "original_hash": "e8b9d39e9e2fc8b2ccef567f6170b7e4",
-    "translation_date": "2026-09-20T14:12:39.678170",
+    "original_hash": "8b0189ad063380d1be7a5eb81ec72284",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "manage-messaging-metadata-using-gravitino.md",
     "language_code": "zh-CN"
   },
   "manage-metalake-using-gravitino.md": {
-    "original_hash": "465ba727dc0faa4c925b84f00993800e",
-    "translation_date": "2026-09-20T14:12:39.678170",
+    "original_hash": "62b1dfd9cf5fcb83cab70a6fc73abec7",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "manage-metalake-using-gravitino.md",
     "language_code": "zh-CN"
   },
   "manage-model-metadata-using-gravitino.md": {
-    "original_hash": "90381aa629390ea5b35fa0b5db8eed41",
-    "translation_date": "2026-09-20T14:12:39.679176",
+    "original_hash": "3ac768f6273364dd8a84809331f7c26e",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "manage-model-metadata-using-gravitino.md",
     "language_code": "zh-CN"
   },
   "manage-policies-in-gravitino.md": {
-    "original_hash": "9a9f2824d378f8ca7bdd4611419c34d6",
-    "translation_date": "2026-09-20T14:12:39.680175",
+    "original_hash": "e95f86674bda6265312e79a9e5be274b",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "manage-policies-in-gravitino.md",
     "language_code": "zh-CN"
   },
   "manage-relational-metadata-using-gravitino.md": {
-    "original_hash": "3eef7231ee9af462a7048d8a3341e7ff",
-    "translation_date": "2026-09-20T14:12:39.680175",
+    "original_hash": "0221e03d5185425bcb8a16c53a3562fd",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "manage-relational-metadata-using-gravitino.md",
     "language_code": "zh-CN"
   },
   "manage-statistics-in-gravitino.md": {
-    "original_hash": "b451955e20349c3250e598c9e838e765",
-    "translation_date": "2026-09-20T14:12:39.681683",
+    "original_hash": "8a7fd6a2d676d2491f0440b719242353",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "manage-statistics-in-gravitino.md",
     "language_code": "zh-CN"
   },
   "manage-table-partition-using-gravitino.md": {
-    "original_hash": "db43839ae0d4cd8abb6901a45408dc54",
-    "translation_date": "2026-09-20T14:12:39.682694",
+    "original_hash": "960fa65e19b15974b22ccd46e0edde3d",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "manage-table-partition-using-gravitino.md",
     "language_code": "zh-CN"
   },
   "manage-tags-in-gravitino.md": {
-    "original_hash": "6fe44a31fb783078bd586580ed39a934",
-    "translation_date": "2026-09-20T14:12:39.683691",
+    "original_hash": "3628e3a6911b6c91bdd4097f4cf063fb",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "manage-tags-in-gravitino.md",
     "language_code": "zh-CN"
   },
   "manage-user-defined-function-using-gravitino.md": {
-    "original_hash": "d93ab46fc60927e22349fe5db061195b",
-    "translation_date": "2026-09-20T14:12:39.684690",
+    "original_hash": "d7c6f2e614ae212d1dcc4a5df6c2f1e4",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "manage-user-defined-function-using-gravitino.md",
     "language_code": "zh-CN"
   },
   "manage-view-metadata-using-gravitino.md": {
-    "original_hash": "61d4c01015608603da30a941e9772159",
-    "translation_date": "2026-09-20T14:12:39.684690",
+    "original_hash": "d0fdcf0b01523808de8d82117449ff69",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "manage-view-metadata-using-gravitino.md",
     "language_code": "zh-CN"
   },
   "metalakes.md": {
-    "original_hash": "c55fdc1e185985c54eed90bec916bc42",
-    "translation_date": "2026-09-20T14:12:39.685694",
+    "original_hash": "07baf694ceaccb2deb34fb82b4164762",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "metalakes.md",
     "language_code": "zh-CN"
   },
   "metrics.md": {
-    "original_hash": "f6de82363b311a1b77b7998b26fbbeeb",
-    "translation_date": "2026-09-20T14:12:39.686697",
+    "original_hash": "0a195fb4edc36988cde9438c397435f5",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "metrics.md",
     "language_code": "zh-CN"
   },
   "model-catalog.md": {
-    "original_hash": "7a09b50fc611b891b32c840f69b03a55",
-    "translation_date": "2026-09-20T14:12:39.687691",
+    "original_hash": "4e926456421c6e386638424d074935fe",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "model-catalog.md",
     "language_code": "zh-CN"
   },
   "overview.md": {
-    "original_hash": "3ef98da3df9e260669ca83881395f57e",
-    "translation_date": "2026-09-20T14:12:39.689211",
+    "original_hash": "fe6d6708fc889dff5d422e5b50c31049",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "overview.md",
     "language_code": "zh-CN"
   },
   "partitions.md": {
-    "original_hash": "b67196cf01a23c0f991a7ff44d3f5f5a",
-    "translation_date": "2026-09-20T14:12:39.689211",
+    "original_hash": "4d4ecfeaa8f99245dd596983a7a613ff",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "partitions.md",
     "language_code": "zh-CN"
   },
   "policies.md": {
-    "original_hash": "71c63296eaa67f044a35cdc02cea01cf",
-    "translation_date": "2026-09-20T14:12:39.690222",
+    "original_hash": "0192422cb1091f34e0f5f59749cff81c",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "policies.md",
     "language_code": "zh-CN"
   },
   "publish-docker-images.md": {
-    "original_hash": "e84309fbd98a3ffcaaf8af18e41d5a7a",
-    "translation_date": "2026-09-20T14:12:39.691225",
+    "original_hash": "8aab641bde21da5eb954fe801c8fc761",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "publish-docker-images.md",
     "language_code": "zh-CN"
   },
   "security/access-control.md": {
-    "original_hash": "a78dbdfaa0569fb828b75d442611912f",
-    "translation_date": "2026-09-20T14:12:39.713066",
+    "original_hash": "1bf9d4ed2fee1908c408e8b548c4d998",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "security/access-control.md",
     "language_code": "zh-CN"
   },
   "security/authorization-pushdown.md": {
-    "original_hash": "2b6e30503be3e3d0fa811fcf502ff4c2",
-    "translation_date": "2026-09-20T14:12:39.713066",
+    "original_hash": "0738c8e9ea81e72fdd8acf5a59338173",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "security/authorization-pushdown.md",
     "language_code": "zh-CN"
   },
   "security/credential-vending.md": {
-    "original_hash": "6276d3db83f72535aed02ba346dd6960",
-    "translation_date": "2026-09-20T14:12:39.715531",
+    "original_hash": "62a6af9bd9860867cb6b0af9d722c531",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "security/credential-vending.md",
     "language_code": "zh-CN"
   },
   "security/how-to-authenticate.md": {
-    "original_hash": "1fc06685df88d48551a35eaefd115c4d",
-    "translation_date": "2026-09-20T14:12:39.715531",
+    "original_hash": "a416b793dde3f708a90e1b08211e1d5e",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "security/how-to-authenticate.md",
     "language_code": "zh-CN"
   },
   "security/how-to-use-cors.md": {
-    "original_hash": "57ee98baf57f62c1d091deff3d741546",
-    "translation_date": "2026-09-20T14:12:39.716532",
+    "original_hash": "e5f6b2d6f839afa92c6faf2699e2979d",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "security/how-to-use-cors.md",
     "language_code": "zh-CN"
   },
   "security/how-to-use-https.md": {
-    "original_hash": "2fcd3d2570246af6415ef0469050b2ba",
-    "translation_date": "2026-09-20T14:12:39.716532",
+    "original_hash": "9da3c4b031e0938e98be83c0af6cd9ad",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "security/how-to-use-https.md",
     "language_code": "zh-CN"
   },
   "security/local-users-and-groups.md": {
-    "original_hash": "53292f87571f5cf9ae2c875733b4994a",
-    "translation_date": "2026-09-20T14:12:39.717604",
+    "original_hash": "6ab2fc6d405337a51051950a01804f6d",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "security/local-users-and-groups.md",
     "language_code": "zh-CN"
   },
   "spark-connector/spark-authentication-with-gravitino.md": {
-    "original_hash": "5852dcabb40ce4ae55eb4d8833d667a5",
-    "translation_date": "2026-09-20T14:12:39.718626",
+    "original_hash": "7c32a868736c28dd786ec58559a8e4a4",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "spark-connector/spark-authentication-with-gravitino.md",
     "language_code": "zh-CN"
   },
   "spark-connector/spark-catalog-glue.md": {
-    "original_hash": "708f02d7fb58e3dab186de51438e3d97",
-    "translation_date": "2026-09-20T14:12:39.719636",
+    "original_hash": "a55126dc28d7673d6c6eb6ed2caa57d1",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "spark-connector/spark-catalog-glue.md",
     "language_code": "zh-CN"
   },
   "spark-connector/spark-catalog-hive.md": {
-    "original_hash": "7e83f1f62606b5b48e94b30ea3297ada",
-    "translation_date": "2026-09-20T14:12:39.721145",
+    "original_hash": "65bddca9cf88ab595fbc01bfbdb7d711",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "spark-connector/spark-catalog-hive.md",
     "language_code": "zh-CN"
   },
   "spark-connector/spark-catalog-iceberg.md": {
-    "original_hash": "d5d9e8691c1aa9d09f3f124555eace3d",
-    "translation_date": "2026-09-20T14:12:39.722151",
+    "original_hash": "65bdd3c601b9463da5ae3addd63e6265",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "spark-connector/spark-catalog-iceberg.md",
     "language_code": "zh-CN"
   },
   "spark-connector/spark-catalog-jdbc.md": {
-    "original_hash": "d9fc4f9df018a2da8494fd67ebb0ade0",
-    "translation_date": "2026-09-20T14:12:39.723162",
+    "original_hash": "e145afb79e095e244fbcafc53ef2da86",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "spark-connector/spark-catalog-jdbc.md",
     "language_code": "zh-CN"
   },
   "spark-connector/spark-catalog-paimon.md": {
-    "original_hash": "3ca701fd853fa4ba75bd90769a20470b",
-    "translation_date": "2026-09-20T14:12:39.723162",
+    "original_hash": "663b28b60412125866dca8c08bff6d4b",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "spark-connector/spark-catalog-paimon.md",
     "language_code": "zh-CN"
   },
   "spark-connector/spark-connector-udf.md": {
-    "original_hash": "c6fcbd05911166f9c2218c6159ae3f0a",
-    "translation_date": "2026-09-20T14:12:39.724159",
+    "original_hash": "b0aeb3f2cf9323768fd725c3236d0a19",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "spark-connector/spark-connector-udf.md",
     "language_code": "zh-CN"
   },
   "spark-connector/spark-connector.md": {
-    "original_hash": "2cce5c445766afa42d1d5c48b65631a3",
-    "translation_date": "2026-09-20T14:12:39.725172",
+    "original_hash": "62d35a85f35cb0a828f19f939607f538",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "spark-connector/spark-connector.md",
     "language_code": "zh-CN"
   },
   "spark-connector/spark-integration-test.md": {
-    "original_hash": "772817521099c8e979d8073da4dd256c",
-    "translation_date": "2026-09-20T14:12:39.726160",
+    "original_hash": "3c50b9b373d7785ae165dfded162ccd1",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "spark-connector/spark-integration-test.md",
     "language_code": "zh-CN"
   },
   "statistics.md": {
-    "original_hash": "f41e5208d681ece46fcf4edd46b233fc",
-    "translation_date": "2026-09-20T14:12:39.691734",
+    "original_hash": "28c5dcc6651cab249d7134a038fa4aec",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "statistics.md",
     "language_code": "zh-CN"
   },
   "table-maintenance-service/optimizer-cli-reference.md": {
-    "original_hash": "4438a28ea09880aa31df2d77a6e4e943",
-    "translation_date": "2026-09-20T14:12:39.728292",
+    "original_hash": "34db2ad98966ee604af868e596dd90c6",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "table-maintenance-service/optimizer-cli-reference.md",
     "language_code": "zh-CN"
   },
   "table-maintenance-service/optimizer-configuration.md": {
-    "original_hash": "6294ba69afb33f30b23eb21d0d99df4f",
-    "translation_date": "2026-09-20T14:12:39.728813",
+    "original_hash": "5bbeecc0e3048a156afb97f2ec6ca022",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "table-maintenance-service/optimizer-configuration.md",
     "language_code": "zh-CN"
   },
   "table-maintenance-service/optimizer-extension-guide.md": {
-    "original_hash": "931f48adc7db8a11f80a1f63e691f19c",
-    "translation_date": "2026-09-20T14:12:39.729825",
+    "original_hash": "8375192a71288dc08021a442b767b0c5",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "table-maintenance-service/optimizer-extension-guide.md",
     "language_code": "zh-CN"
   },
   "table-maintenance-service/optimizer-troubleshooting.md": {
-    "original_hash": "b37fdb9add2bf00f1b8ca5ae4dbea544",
-    "translation_date": "2026-09-20T14:12:39.730826",
+    "original_hash": "a5b892b81f4be1503d5497ed14838645",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "table-maintenance-service/optimizer-troubleshooting.md",
     "language_code": "zh-CN"
   },
   "table-partitioning-distribution-sort-order-indexes.md": {
-    "original_hash": "fd38d71d1ebb8c181d230929fec3bc26",
-    "translation_date": "2026-09-20T14:12:39.691734",
+    "original_hash": "29308e5d47dbfbb5ef17c55d741c4f47",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "table-partitioning-distribution-sort-order-indexes.md",
     "language_code": "zh-CN"
   },
   "tables-and-views.md": {
-    "original_hash": "a89ad321d8d1deacb46e495f87c07b6d",
-    "translation_date": "2026-09-20T14:12:39.694246",
+    "original_hash": "0f7d3511f7c3e24d5e71e06c04f2565d",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "tables-and-views.md",
     "language_code": "zh-CN"
   },
   "tags.md": {
-    "original_hash": "3b13759fad2850ecb52b9cb09920ed8e",
-    "translation_date": "2026-09-20T14:12:39.695252",
+    "original_hash": "fe41bbd5fde08aea25218ca9fedb8904",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "tags.md",
     "language_code": "zh-CN"
   },
   "topics.md": {
-    "original_hash": "ae3fb23a647f2a5ce947e25d82e33336",
-    "translation_date": "2026-09-20T14:12:39.695252",
+    "original_hash": "d2ab3ed8f09e7a797a121f89f3c3f734",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "topics.md",
     "language_code": "zh-CN"
   },
   "webui-v2.md": {
-    "original_hash": "cc9458848b5969f4f8c24ac941ee95de",
-    "translation_date": "2026-09-20T14:12:39.696253",
+    "original_hash": "fba9aa2f0e38b764bc3a6d2c89fd1a97",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "webui-v2.md",
     "language_code": "zh-CN"
   },
   "webui.md": {
-    "original_hash": "095dd5b3ae1f929ebe57df62bd673496",
-    "translation_date": "2026-09-20T14:12:39.697255",
+    "original_hash": "40500d027cccbc6167a29f3db8573d6b",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "webui.md",
     "language_code": "zh-CN"
   },
   "cli.md": {
-    "original_hash": "3dd76ebfec89d57878a65c89e2be2d2f",
-    "translation_date": "2026-09-20T14:12:39.626041",
+    "original_hash": "1211da2a77602e82bae6191186ee2cb4",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "cli.md",
     "language_code": "zh-CN"
   },
   "table-maintenance-service/optimizer.md": {
-    "original_hash": "813803a2f4e31fac899970c08692a5ea",
-    "translation_date": "2026-09-20T14:12:39.731968",
+    "original_hash": "4dfddb82f656c27ef0b8d977d37c4869",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "table-maintenance-service/optimizer.md",
     "language_code": "zh-CN"
   },
   "trino-connector/authentication.md": {
-    "original_hash": "7456cc7540ea566741c40ef648082234",
-    "translation_date": "2026-09-20T14:12:39.732979",
+    "original_hash": "c702cfb4b828c5f182d0a29c1d19ba59",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "trino-connector/authentication.md",
     "language_code": "zh-CN"
   },
   "trino-connector/catalog-glue.md": {
-    "original_hash": "d31926827c15d1bcbe750c7d2c7b79b0",
-    "translation_date": "2026-09-20T14:12:39.733984",
+    "original_hash": "1d2bb66c968119f2f2c393ac17ee1fd0",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "trino-connector/catalog-glue.md",
     "language_code": "zh-CN"
   },
   "trino-connector/catalog-hive.md": {
-    "original_hash": "4b3e899acfe0695a481031c2c24487f2",
-    "translation_date": "2026-09-20T14:12:39.734980",
+    "original_hash": "8dd992cae686a9e32eafd8ce65014186",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "trino-connector/catalog-hive.md",
     "language_code": "zh-CN"
   },
   "trino-connector/catalog-iceberg.md": {
-    "original_hash": "c3f4a5020c6061f93c40192dca4c4c32",
-    "translation_date": "2026-09-20T14:12:39.736978",
+    "original_hash": "a8142e95223da6cf57cb0708bbebe42a",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "trino-connector/catalog-iceberg.md",
     "language_code": "zh-CN"
   },
   "trino-connector/catalog-mysql.md": {
-    "original_hash": "806fa048250c2174c21ecd6da780b795",
-    "translation_date": "2026-09-20T14:12:39.737979",
+    "original_hash": "91d2128a8f4d442a834becff8f440a26",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "trino-connector/catalog-mysql.md",
     "language_code": "zh-CN"
   },
   "trino-connector/catalog-postgresql.md": {
-    "original_hash": "049065c8887fc1e21381114ddf46d16e",
-    "translation_date": "2026-09-20T14:12:39.739975",
+    "original_hash": "d97622313a8a49f427abe071c1857655",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "trino-connector/catalog-postgresql.md",
     "language_code": "zh-CN"
   },
   "trino-connector/configuration.md": {
-    "original_hash": "aa5a5d8e25a147d375727d110235a3ec",
-    "translation_date": "2026-09-20T14:12:39.740972",
+    "original_hash": "3b7c6b55ee5f26334876f27e0f0d33ca",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "trino-connector/configuration.md",
     "language_code": "zh-CN"
   },
   "trino-connector/development.md": {
-    "original_hash": "32e2d74a3a17eb7585b2025544e63981",
-    "translation_date": "2026-09-20T14:12:39.742572",
+    "original_hash": "43b342067ebd22e1fd3697608a4c465c",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "trino-connector/development.md",
     "language_code": "zh-CN"
   },
   "trino-connector/index.md": {
-    "original_hash": "cb3b92138c3a0c1a4ab28f4981621339",
-    "translation_date": "2026-09-20T14:12:39.743573",
+    "original_hash": "717b9e4bca3f54b097018c5ec221affc",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "trino-connector/index.md",
     "language_code": "zh-CN"
   },
   "trino-connector/installation.md": {
-    "original_hash": "7618c28741512aa67a9a40a3a9c03ad6",
-    "translation_date": "2026-09-20T14:12:39.743573",
+    "original_hash": "0f7a47af6b9ece53f415b7aae0cddd5d",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "trino-connector/installation.md",
     "language_code": "zh-CN"
   },
   "trino-connector/requirements.md": {
-    "original_hash": "7869b7197db10080562d94b3cf9d69bf",
-    "translation_date": "2026-09-20T14:12:39.744576",
+    "original_hash": "1717219128961cd568c131d2ee9c1518",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "trino-connector/requirements.md",
     "language_code": "zh-CN"
   },
   "trino-connector/sql-support.md": {
-    "original_hash": "855a2b41bc88546ba6b503b7117275fb",
-    "translation_date": "2026-09-20T14:12:39.744576",
+    "original_hash": "ca25ea1b0b6d5ad663ebddddf7f18336",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "trino-connector/sql-support.md",
     "language_code": "zh-CN"
   },
   "trino-connector/supported-catalog.md": {
-    "original_hash": "a102a0bb8581749054c36092f1e94ba5",
-    "translation_date": "2026-09-20T14:12:39.745574",
+    "original_hash": "5be85b306cd030659ebc006f90a02167",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "trino-connector/supported-catalog.md",
     "language_code": "zh-CN"
   },
   "trino-connector/trino-cascading-query.md": {
-    "original_hash": "fecec33386295bc75abad8d22b31395e",
-    "translation_date": "2026-09-20T14:12:39.746571",
+    "original_hash": "ced65be84fcd0efb2a6b66eb46af4ada",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "trino-connector/trino-cascading-query.md",
     "language_code": "zh-CN"
   },
   "trino-connector/trino-connector.md": {
-    "original_hash": "7b9f73be4e3e530b0f54e7c67716bab1",
-    "translation_date": "2026-09-20T14:12:39.747578",
+    "original_hash": "1ef732f621f4e451fbc27b19e2b3552c",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "trino-connector/trino-connector.md",
     "language_code": "zh-CN"
   },
   "trino-connector/udf-support.md": {
-    "original_hash": "46392548d89171503128979665b326b5",
-    "translation_date": "2026-09-20T14:12:39.748573",
+    "original_hash": "af575dd4a8b062c10b384c51994a1bef",
+    "translation_date": "2026-09-20T06:51:43+00:00",
     "source_file": "trino-connector/udf-support.md",
     "language_code": "zh-CN"
   }
